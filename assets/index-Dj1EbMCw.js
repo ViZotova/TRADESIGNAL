@@ -2832,7 +2832,7 @@ const oQ = ({ showConfettiStatus: A }) => {
       )
     ),
   hQ = s.forwardRef(TQ),
-  RQ = "/assets/denis-BrCC0BhX.jpg",
+  RQ = "./assets/denis-BrCC0BhX.jpg",
   jQ = ({
     setCurrentTimeInterval: A,
     setCurrentAIModel: g,

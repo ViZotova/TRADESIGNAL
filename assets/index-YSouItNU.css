@@ -1101,7 +1101,7 @@ button.swiper-pagination-bullet {
 }
 
 ._videoWrapper_1jpyc_19:before {
-  content: url(/assets/macbookMock-TJNt-wav.svg);
+  content: url(./assets/macbookMock-TJNt-wav.svg);
   position: absolute;
   top: 0;
   right: 0;
@@ -1166,7 +1166,7 @@ button.swiper-pagination-bullet {
   }
 
   ._videoWrapper_1jpyc_19:before {
-    content: url(/assets/macbookMockDesktop-1pcInjGB.svg)
+    content: url(./assets/macbookMockDesktop-1pcInjGB.svg)
   }
 
   ._progressBarIndicate_1jpyc_49 {
