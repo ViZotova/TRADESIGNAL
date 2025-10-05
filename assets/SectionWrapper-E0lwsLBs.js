@@ -1,0 +1,1 @@
+import{j as r,c as s}from"./main-CUM0TpEs.js";const t="_wrapper_hq2vv_1",o="_container_hq2vv_8",a={wrapper:t,container:o},i=({wrapperClassName:e,containerClassName:n,children:c})=>r.jsx("section",{className:s(a.wrapper,e),children:r.jsx("div",{className:s(a.container,n),children:c})});export{i as S};

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeSignal</title>
+  <!-- подключения -->
+  <link rel="stylesheet" crossorigin="" href="/assets/main-B4x2g79e.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/index-BY-Py-Uy.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/react-toastify.esm-BK1xofNY.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/MainButton-CN3kiotW.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/MainButton-CGgs3d4p.css">
+  <link rel="stylesheet" crossorigin="" href="/assets/index-DHYTcBUa.css">
+  <!-- script -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KJCLQLQ8LJ"></script>
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KJCLQLQ8LJ");
+  </script> -->
+  <script type="module" crossorigin="" src="/assets/main-CUM0TpEs.js"></script>
+  <!-- доп стили -->
+  <style type="text/css">
+    .rfm-marquee-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: var(--width);
+      transform: var(--transform);
+    }
+
+    .rfm-marquee-container:hover div {
+      animation-play-state: var(--pause-on-hover);
+    }
+
+    .rfm-marquee-container:active div {
+      animation-play-state: var(--pause-on-click);
+    }
+
+    .rfm-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rfm-overlay::before,
+    .rfm-overlay::after {
+      background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: var(--gradient-width);
+      z-index: 2;
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    .rfm-overlay::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .rfm-overlay::before {
+      left: 0;
+      top: 0;
+    }
+
+    .rfm-marquee {
+      flex: 0 0 auto;
+      min-width: var(--min-width);
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+      animation-play-state: var(--play);
+      animation-delay: var(--delay);
+      animation-direction: var(--direction);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .rfm-initial-child-container {
+      flex: 0 0 auto;
+      display: flex;
+      min-width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .rfm-child {
+      transform: var(--transform);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="_wrapper_16p5b_1">
+      <a class="_cross_16p5b_7" id="cross" href="/">
+        <svg width="40" height="40"
+          viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_575_13601)">
+            <g filter="url(#filter0_d_575_13601)">
+              <path
+                d="M5.85967 34.1397C3.94947 32.2947 2.42582 30.0878 1.37764 27.6478C0.329462 25.2077 -0.222262 22.5833 -0.245339 19.9277C-0.268415 17.2721 0.237619 14.6385 1.24324 12.1806C2.24885 9.72266 3.73392 7.48962 5.61177 5.61177C7.48962 3.73392 9.72266 2.24885 12.1806 1.24324C14.6385 0.237619 17.2721 -0.268415 19.9277 -0.245339C22.5833 -0.222262 25.2077 0.329462 27.6478 1.37764C30.0878 2.42582 32.2947 3.94947 34.1397 5.85967C37.7828 9.63171 39.7987 14.6838 39.7532 19.9277C39.7076 25.1716 37.6042 30.1879 33.896 33.896C30.1879 37.6042 25.1716 39.7076 19.9277 39.7532C14.6838 39.7987 9.63171 37.7828 5.85967 34.1397ZM22.7997 19.9997L28.4597 14.3397L25.6397 11.5197L19.9997 17.1797L14.3397 11.5197L11.5197 14.3397L17.1797 19.9997L11.5197 25.6597L14.3397 28.4797L19.9997 22.8197L25.6597 28.4797L28.4797 25.6597L22.8197 19.9997H22.7997Z"
+                fill="#2B8EF3"></path>
+            </g>
+          </g>
+          <defs>
+            <filter id="filter0_d_575_13601" x="-20.2461" y="-20.2461" width="80" height="80"
+              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"></feColorMatrix>
+              <feOffset></feOffset>
+              <feGaussianBlur stdDeviation="10"></feGaussianBlur>
+              <feComposite in2="hardAlpha" operator="out"></feComposite>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_575_13601"></feBlend>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_575_13601" result="shape"></feBlend>
+            </filter>
+            <clipPath id="clip0_575_13601">
+              <rect width="40" height="40" fill="white"></rect>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <div class="_container_rgf45_1">
+        <div class="_contentWrapper_rgf45_57">
+          <h1 class="_title_rgf45_15">Подтвердите свой email</h1>
+          <p class="_subtitle_rgf45_24">Чтобы войти, активируйте свой аккаунт через email</p>
+          <p class="_text_rgf45_34">Мы отправили письмо на ваш электронный адрес. Проверьте почту и нажмите на ссылку в письме, чтобы активировать свой аккаунт. Если не можете найти письмо, проверьте вкладку спам.</p>
+          <p class="_remainigText_rgf45_44">Вы сможете повторно отправить письмо через: 00:00</p>
+          <button type="button" class="_button_13fxj_1 _action_13fxj_13"><span>Отправить письмо снова</span>
+            <svg width="16" height="16"
+              viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1166_5278)">
+                <path
+                  d="M15.997 8.57534C15.9773 8.33903 15.8195 8.14211 15.6027 8.06334L5.17449 4.44001C4.95765 4.36124 4.72109 4.42032 4.56339 4.57786C4.40568 4.73539 4.34654 4.9717 4.4254 5.18831L8.05261 15.6054C8.13146 15.822 8.32859 15.9795 8.56515 15.9992C8.58486 15.9992 8.60457 15.9992 8.60457 15.9992C8.82142 15.9992 9.01855 15.8811 9.11712 15.6842L10.6153 12.8682L12.5669 14.8374C12.6852 14.9556 12.8232 15.0146 12.9809 15.0146C13.1386 15.0146 13.2963 14.9556 13.3948 14.8374L14.8142 13.4196C14.9325 13.3014 14.9916 13.1636 14.9916 13.006C14.9916 12.8485 14.9325 12.691 14.8142 12.5925L12.8429 10.643L15.6816 9.14641C15.8984 9.02825 16.0167 8.81164 15.997 8.57534Z"
+                  fill="#010101"></path>
+                <path
+                  d="M2.021 1.21141C1.78444 0.975104 1.40989 0.975104 1.19305 1.21141C0.956485 1.44772 0.956485 1.82187 1.19305 2.03848L2.43497 3.27908C2.55325 3.39723 2.71096 3.4563 2.84895 3.4563C2.98694 3.4563 3.14464 3.39723 3.26292 3.27908C3.49948 3.04277 3.49948 2.66862 3.26292 2.45201L2.021 1.21141Z"
+                  fill="#010101"></path>
+                <path
+                  d="M5.48957 2.60907C5.54871 2.88476 5.78527 3.08168 6.06125 3.08168C6.10068 3.08168 6.1401 3.08168 6.17953 3.06199C6.49494 3.00291 6.71178 2.68784 6.65264 2.37277L6.29781 0.482333C6.23867 0.167261 5.92326 -0.0493516 5.60785 0.00972444C5.29244 0.0688005 5.0756 0.383873 5.13473 0.698945L5.48957 2.60907Z"
+                  fill="#010101"></path>
+                <path
+                  d="M2.59215 5.50383L0.699693 5.14937C0.384284 5.0903 0.0688742 5.30691 0.00973485 5.62198C-0.0494044 5.93705 0.16744 6.25213 0.482849 6.3112L2.37531 6.66566C2.41473 6.66566 2.45416 6.68535 2.49359 6.68535C2.76957 6.68535 3.02584 6.48843 3.06527 6.21274C3.1244 5.85829 2.90756 5.56291 2.59215 5.50383Z"
+                  fill="#010101"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1166_5278">
+                  <rect width="16" height="16" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <div class="Toastify"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+
+<!-- повторная отправка письма -->
+<script>
+  document.querySelector("button._action_13fxj_13").addEventListener("click", async () => {
+    const email = localStorage.getItem("pendingEmail");
+
+    if (!email) {
+      alert("Email не найден. Сначала зарегистрируйтесь.");
+      return;
+    }
+
+    try {
+      const response = await fetch("/resend-confirmation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await response.json();
+      alert(result.message || "Письмо отправлено.");
+    } catch (error) {
+      alert("Ошибка при отправке: " + error.message);
+    }
+  });
+</script>
+
+  <script src="register.js"></script>
+</body>
+</html>

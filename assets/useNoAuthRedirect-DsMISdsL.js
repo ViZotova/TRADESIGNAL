@@ -1,0 +1,1 @@
+import{b as c,r as a,C as i,d as n}from"./main-CUM0TpEs.js";const h=()=>{const e=c(),{store:s}=a.useContext(i),o=n();a.useEffect(()=>{new Promise(t=>{setTimeout(()=>{t()},300)}).then(()=>{s.isAuth||e(o("/"))}).catch(t=>console.log(t))},[s,e,o])};export{h as u};

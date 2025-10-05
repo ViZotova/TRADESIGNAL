@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeSignal | Сигнал </title>
+  <!-- подключения -->
+  <link rel="stylesheet" crossorigin="" href="/assets/main-B4x2g79e.css">
+
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/index-Dj1EbMCw.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/react-toastify.esm-BK1xofNY.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/useNoAuthRedirect-DsMISdsL.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/useNoRefRedirect-CsRs-S9D.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/SectionWrapper-E0lwsLBs.js">
+  <link rel="stylesheet" crossorigin="" href="assets/SectionWrapper-CdhYYsr6.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/MainButton-CN3kiotW.js">
+  <link rel="stylesheet" crossorigin="" href="assets/MainButton-CGgs3d4p.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/InstructionModal-CSbRkftG.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/proxy-B9g5KbkS.js">
+  <link rel="stylesheet" crossorigin="" href="assets/InstructionModal-DNmkMxU9.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/AccordionCard-CckbKg8D.js">
+  <link rel="stylesheet" crossorigin="" href="assets/AccordionCard-QEEY7iGF.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/index-ByT5oEbe.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/InfiniteLoader-BASK9onZ.js">
+  <link rel="stylesheet" crossorigin="" href="assets/InfiniteLoader-D1E4-LrJ.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="assets/bitcoin-B_NPvEmV.js">
+  <link rel="stylesheet" crossorigin="" href="assets/index-CcXXzOpb.css">
+
+  <link rel="stylesheet" crossorigin="" href="/assets/index-DPE4yMVk.css">
+
+  <link rel="stylesheet" crossorigin="" href="/assets/InfiniteLoader-D1E4-LrJ.css">
+
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KJCLQLQ8LJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KJCLQLQ8LJ");
+  </script>
+  <!-- <script type="module" crossorigin="" src="/assets/main-CUM0TpEs.js"></script> -->
+
+  <!-- доп стиль  -->
+  <style type="text/css">
+    .rfm-marquee-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: var(--width);
+      transform: var(--transform);
+    }
+
+    .rfm-marquee-container:hover div {
+      animation-play-state: var(--pause-on-hover);
+    }
+
+    .rfm-marquee-container:active div {
+      animation-play-state: var(--pause-on-click);
+    }
+
+    .rfm-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rfm-overlay::before,
+    .rfm-overlay::after {
+      background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: var(--gradient-width);
+      z-index: 2;
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    .rfm-overlay::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .rfm-overlay::before {
+      left: 0;
+      top: 0;
+    }
+
+    .rfm-marquee {
+      flex: 0 0 auto;
+      min-width: var(--min-width);
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+      animation-play-state: var(--play);
+      animation-delay: var(--delay);
+      animation-direction: var(--direction);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .rfm-initial-child-container {
+      flex: 0 0 auto;
+      display: flex;
+      min-width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .rfm-child {
+      transform: var(--transform);
+    }
+  </style>
+
+  <style>
+    #modal-root {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+  <style>
+    ._expanderContainer_1uqbn_47 {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease;
+    }
+
+    ._wrapper_1uqbn_1.active ._expanderContainer_1uqbn_47 {
+      max-height: 1000px;
+    }
+
+    ._expander_1uqbn_47 {
+      min-height: 300px;
+      visibility: inherit;
+      transition: visibility .2s;
+    }
+
+    ._marqueeContainer_v1xye_1:nth-child(2) {
+      transform: translateY(-40px) rotate(4deg) !important;
+      position: relative;
+      z-index: 0;
+    }
+  </style>
+
+</head>
+
+<body style="overflow: auto;">
+  <div id="root">
+    <div class="_wrapper_dltkq_1">
+      <div class="_container_dltkq_13">
+        <div>
+          <a class="_link_18p1q_1" href="index-lk.html">TRADESIGNAL</a>
+        </div>
+        <div class="_burger_dltkq_22"></div>
+        <div class="_menuWrapper_dltkq_64 _auth_dltkq_81">
+          <nav class="_navbarMenu_dltkq_95">
+            <a class="_navLink_dltkq_111" href="about-us-lk.html">О нас</a>
+            <a class="_navLink_dltkq_111 _active_dltkq_119" href="signal.html">Сигнал</a>
+            <a class="_navLink_dltkq_111" href="history.html">История сделок</a>
+            <a class="_navLink_dltkq_111" href="instruction-lk.html">Инструкция</a>
+            <a class="_navLink_dltkq_111" href="wiki-lk.html">Вики</a>
+          </nav>
+          <div class="_right_dltkq_103">
+            <div class="_wrapper_1xdl1_1">
+              <button class="_button_1xdl1_5">
+                <span class="_currLang_1xdl1_41">RU</span>
+              </button>
+            </div>
+            <!-- социальные -->
+            <a class="_supportLink_dltkq_152" href="https://t.me/max_supportTraide" target="_blank">
+              <button class="_button_1wisi_1 _blueShadow_1wisi_12">
+                <img src="assets/tg.svg" alt="icon-tg">
+              </button>
+              <span>Поддержка</span>
+            </a>
+            <div class="_authLinksWrapper_dltkq_138">
+              <a class="_accountWrapper_dltkq_123" href="account.html">
+                <button class="_button_1wisi_1 _blueShadow_1wisi_12 _account_dltkq_123">
+                  <img src="assets/log.svg" alt="регистрация">
+                </button>
+                <p>Мой кабинет</p>
+              </a>
+              <div class="_authLoginLinkWrapper_dltkq_139"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Toastify" id="signalToaster"></div>
+
+    <section class="_wrapper_hq2vv_1">
+      <div class="_container_hq2vv_8 _wrapper_18eu1_1">
+        <div class="Toastify"></div>
+        <!-- видео  -->
+        <div class="_signalVideo_1ix92_1">
+          <video loop="" playsinline="" class="_video_1ix92_12">
+            <source src="/videos/loading-animation.mp4#t=1" type="video/mp4">
+          </video>
+        </div>
+        <!-- настройки  -->
+        <div class="_wrapper_g0rk5_1">
+          <h1 class="_mainTitle_g0rk5_6">Настройки сигнала</h1>
+          <!-- Информация -->
+          <div class="_info_g0rk5_300">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
+              width="50px" height="50px" fill-rule="nonzero">
+              <g fill="#2b8ef3" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal;">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M25,2c-12.703,0 -23,10.297 -23,23c0,12.703 10.297,23 23,23c12.703,0 23,-10.297 23,-23c0,-12.703 -10.297,-23 -23,-23zM25,11c1.657,0 3,1.343 3,3c0,1.657 -1.343,3 -3,3c-1.657,0 -3,-1.343 -3,-3c0,-1.657 1.343,-3 3,-3zM29,38h-2h-4h-2v-2h2v-13h-2v-2h2h4v2v13h2z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+            Информация
+          </div>
+          <div class="_listWrapper_g0rk5_12">
+            <h2>AI:</h2>
+            <div class="_list_g0rk5_12">
+              <!-- ChatGPT 4.0 -->
+              <button class="">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>ic_fluent_bot_24_filled</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="\uD83D\uDD0D-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="ic_fluent_bot_24_filled" fill="#ffffff" fill-rule="nonzero">
+                        <path
+                          d="M17.7530511,13.999921 C18.9956918,13.999921 20.0030511,15.0072804 20.0030511,16.249921 L20.0030511,17.1550008 C20.0030511,18.2486786 19.5255957,19.2878579 18.6957793,20.0002733 C17.1303315,21.344244 14.8899962,22.0010712 12,22.0010712 C9.11050247,22.0010712 6.87168436,21.3444691 5.30881727,20.0007885 C4.48019625,19.2883988 4.00354153,18.2500002 4.00354153,17.1572408 L4.00354153,16.249921 C4.00354153,15.0072804 5.01090084,13.999921 6.25354153,13.999921 L17.7530511,13.999921 Z M11.8985607,2.00734093 L12.0003312,2.00049432 C12.380027,2.00049432 12.6938222,2.2826482 12.7434846,2.64872376 L12.7503312,2.75049432 L12.7495415,3.49949432 L16.25,3.5 C17.4926407,3.5 18.5,4.50735931 18.5,5.75 L18.5,10.254591 C18.5,11.4972317 17.4926407,12.504591 16.25,12.504591 L7.75,12.504591 C6.50735931,12.504591 5.5,11.4972317 5.5,10.254591 L5.5,5.75 C5.5,4.50735931 6.50735931,3.5 7.75,3.5 L11.2495415,3.49949432 L11.2503312,2.75049432 C11.2503312,2.37079855 11.5324851,2.05700336 11.8985607,2.00734093 L12.0003312,2.00049432 L11.8985607,2.00734093 Z M9.74928905,6.5 C9.05932576,6.5 8.5,7.05932576 8.5,7.74928905 C8.5,8.43925235 9.05932576,8.99857811 9.74928905,8.99857811 C10.4392523,8.99857811 10.9985781,8.43925235 10.9985781,7.74928905 C10.9985781,7.05932576 10.4392523,6.5 9.74928905,6.5 Z M14.2420255,6.5 C13.5520622,6.5 12.9927364,7.05932576 12.9927364,7.74928905 C12.9927364,8.43925235 13.5520622,8.99857811 14.2420255,8.99857811 C14.9319888,8.99857811 15.4913145,8.43925235 15.4913145,7.74928905 C15.4913145,7.05932576 14.9319888,6.5 14.2420255,6.5 Z"
+                          id="\uD83C\uDFA8-Color"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                ChatGPT 4.0
+              </button>
+              <!-- Signal1% AI -->
+              <button class="_selected_g0rk5_46">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-1,
+                        .cls-2 {
+                          fill-rule: evenodd;
+                        }
+
+                        .cls-2 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Icon_24px_MLEngine_Color</title>
+                    <g data-name="Product Icons">
+                      <g>
+                        <polygon class="cls-1"
+                          points="16.64 15.13 17.38 13.88 20.91 13.88 22 12 19.82 8.25 16.75 8.25 15.69 6.39 14.5 6.39 14.5 5.13 16.44 5.13 17.5 7 19.09 7 16.9 3.25 12.63 3.25 12.63 8.25 14.36 8.25 15.09 9.5 12.63 9.5 12.63 12 14.89 12 15.94 10.13 18.75 10.13 19.47 11.38 16.67 11.38 15.62 13.25 12.63 13.25 12.63 17.63 16.03 17.63 15.31 18.88 12.63 18.88 12.63 20.75 16.9 20.75 20.18 15.13 18.09 15.13 17.36 16.38 14.5 16.38 14.5 15.13 16.64 15.13">
+                        </polygon>
+                        <polygon class="cls-2"
+                          points="7.36 15.13 6.62 13.88 3.09 13.88 2 12 4.18 8.25 7.25 8.25 8.31 6.39 9.5 6.39 9.5 5.13 7.56 5.13 6.5 7 4.91 7 7.1 3.25 11.38 3.25 11.38 8.25 9.64 8.25 8.91 9.5 11.38 9.5 11.38 12 9.11 12 8.06 10.13 5.25 10.13 4.53 11.38 7.33 11.38 8.38 13.25 11.38 13.25 11.38 17.63 7.97 17.63 8.69 18.88 11.38 18.88 11.38 20.75 7.1 20.75 3.82 15.13 5.91 15.13 6.64 16.38 9.5 16.38 9.5 15.13 7.36 15.13">
+                        </polygon>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                Signal1% AI
+              </button>
+              <!-- VIP Indicator -->
+              <button class="_vip_g0rk5_59">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  fill="#ffffff" stroke="#ffffff">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>VIP_2_line</title>
+                    <g id="\u9875\u9762-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Business" transform="translate(-192.000000, -192.000000)">
+                        <g id="VIP_2_line" transform="translate(192.000000, 192.000000)">
+                          <path
+                            d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                            id="MingCute" fill-rule="nonzero"></path>
+                          <path
+                            d="M12.9873,5.73973 C13.5921,5.39576 14,4.74552 14,4 C14,2.89543 13.1046,2 12,2 C10.8954,2 10,2.89543 10,4 C10,4.74719 10.4097,5.39868 11.0168,5.74204 L11.0078,5.7603 C10.3521,7.1269 9.44232,9.08472 8.03664,9.81971 C6.88336,10.4227 5.22628,10.1194 3.99634,9.89437 C3.94213,9.11523 3.29291,8.5 2.5,8.5 C1.67157,8.5 1,9.17157 1,10 C1,10.7347 1.52816,11.346 2.22549,11.4749 L5.17264,19.0836 C5.62005,20.2387 6.7314,21 7.97011,21 L16.0299,21 C17.2686,21 18.3799,20.2387 18.8274,19.0836 L21.7745,11.4749 C22.4718,11.346 23,10.7347 23,10 C23,9.17157 22.3284,8.5 21.5,8.5 C20.7223,8.5 20.0828,9.09184 20.0074,9.8497 C18.7483,10.013 17.1251,10.2213 15.9634,9.61383 C14.5859,8.89361 13.6634,7.07075 12.9873,5.73973 Z M12.0254,8.10728 C12.7931,9.35273 13.7136,10.6944 15.0366,11.3862 C16.3643,12.0804 17.9971,12.0451 19.4573,11.9201 L16.9624,18.3612 C16.8132,18.7462 16.4428,19 16.0299,19 L7.97011,19 C7.5572,19 7.18676,18.7462 7.03762,18.3612 L4.57675,12.008 C6.01588,12.1916 7.64394,12.2819 8.96336,11.5921 C10.3405,10.872 11.263,9.42043 12.0254,8.10728 Z"
+                            id="\u5F62\u72B6" fill="#fff"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                VIP Indicator
+                <span class="_confetti_g0rk5_79"></span><span class="_confetti_g0rk5_79"></span><span
+                  class="_confetti_g0rk5_79"></span><span class="_confetti_g0rk5_79"></span><span
+                  class="_confetti_g0rk5_79"></span><span class="_confetti_g0rk5_79"></span><span
+                  class="_confetti_g0rk5_79"></span><span class="_confetti_g0rk5_79"></span><span
+                  class="_confetti_g0rk5_79"></span><span class="_confetti_g0rk5_79"></span>
+              </button>
+              <!-- 1% SQUAD -->
+              <button class="_squad13_g0rk5_69">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-number-13-small">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M8 8h1v8"></path>
+                  <path
+                    d="M13 8h2.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-1.5h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-2.5">
+                  </path>
+                </svg>1% SQUAD
+              </button>
+              <!-- Signal1% AI v2 -->
+              <button class="">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-2 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-3 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Icon_24px_CloudBuild_Color</title>
+                    <g data-name="Product Icons">
+                      <g>
+                        <g>
+                          <g>
+                            <polygon class="cls-1"
+                              points="12.15 16.24 15.67 14.21 15.67 10.15 14.49 9.46 10.97 15.56 12.15 16.24"></polygon>
+                            <polygon class="cls-2"
+                              points="8.63 10.15 8.63 14.21 9.81 14.89 13.34 8.8 12.15 8.11 8.63 10.15"></polygon>
+                          </g>
+                        </g>
+                      </g>
+                      <polygon class="cls-3"
+                        points="11.46 17.45 7.24 15.01 7.24 10.15 3.49 7.98 3.49 17.18 11.46 21.78 11.46 17.45">
+                      </polygon>
+                      <polygon class="cls-3"
+                        points="7.93 8.95 12.15 6.51 16.37 8.95 20.13 6.78 12.15 2.17 4.17 6.78 7.93 8.95"></polygon>
+                      <polygon class="cls-3"
+                        points="17.06 15.01 12.84 17.45 12.84 21.78 20.82 17.18 20.82 7.98 17.06 10.15 17.06 15.01">
+                      </polygon>
+                    </g>
+                  </g>
+                </svg>Signal1% AI v2
+              </button>
+              <!-- Indicators + ChatGPT 3.5 -->
+              <button class="">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1,
+                        .cls-3 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-2 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-2,
+                        .cls-3,
+                        .cls-4 {
+                          fill-rule: evenodd;
+                        }
+
+                        .cls-4 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Icon_24px_DeployManage_Color</title>
+                    <g data-name="Product Icons">
+                      <g>
+                        <rect class="cls-1" x="10" y="17" width="4" height="4"></rect>
+                        <polygon class="cls-2" points="19 10.84 14.66 6.51 13.65 7.52 19 12.85 19 10.84"></polygon>
+                        <polygon class="cls-3" points="15.67 9.53 13.65 7.52 14.66 6.51 15.67 7.52 15.67 9.53">
+                        </polygon>
+                        <polygon class="cls-4" points="10.94 12.24 9.93 11.23 14.66 6.51 15.67 7.52 10.94 12.24">
+                        </polygon>
+                        <polygon class="cls-2" points="10.94 12.24 8.08 9.39 9.1 8.38 11.95 11.23 10.94 12.24">
+                        </polygon>
+                        <polygon class="cls-3" points="10.08 11.38 8.08 9.39 9.1 8.38 10.08 9.36 10.08 11.38"></polygon>
+                        <polygon class="cls-4" points="5.44 13.99 10.08 9.36 9.07 8.35 5 12.41 5 13.99 5.44 13.99">
+                        </polygon>
+                        <path class="cls-2"
+                          d="M22,4.05a1.24,1.24,0,0,0-1-1H3a1.24,1.24,0,0,0-1,1V17a1.19,1.19,0,0,0,1,1H21a1.19,1.19,0,0,0,1-1V4.05ZM20,16H4V5H20Z">
+                        </path>
+                        <path class="cls-2" d="M8,22c0-.69.31-1,1-1h6c.69,0,1,.31,1,1Z"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>Indicators + ChatGPT 3.5
+              </button>
+              <!-- 1%Trade AI PLUS -->
+              <button class="">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-2 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-3 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Icon_24px_CloudAPIs_Color</title>
+                    <g data-name="Product Icons">
+                      <path class="cls-1" d="M16.49,12,12,16.49,7.51,12,12,7.51ZM12,14.91,14.91,12,12,9.09,9.09,12Z">
+                      </path>
+                      <polygon class="cls-2" points="16.33 15.02 18.98 15.02 22 12 19.35 12 16.33 15.02"></polygon>
+                      <polygon class="cls-3" points="16.33 8.98 19.35 12 22 12 18.98 8.98 16.33 8.98"></polygon>
+                      <polygon class="cls-3" points="7.67 8.98 5.02 8.98 2 12 4.65 12 7.67 8.98"></polygon>
+                      <polygon class="cls-2" points="2 12 5.02 15.02 7.67 15.02 4.65 12 2 12"></polygon>
+                      <polygon class="cls-3" points="8.98 5.02 8.98 7.67 12 4.65 12 2 8.98 5.02"></polygon>
+                      <polygon class="cls-2" points="12 2 12 4.65 15.02 7.67 15.02 5.02 12 2"></polygon>
+                      <polygon class="cls-3" points="8.98 16.33 8.98 18.98 12 22 12 19.35 8.98 16.33"></polygon>
+                      <polygon class="cls-2" points="12 19.35 12 22 15.02 18.98 15.02 16.33 12 19.35"></polygon>
+                    </g>
+                  </g>
+                </svg>1%Trade AI PLUS
+              </button>
+              <!-- MANUAL AI -->
+              <button class="">
+                <svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
+                  <path d="M11 44V15C11 12.7909 12.7909 11 15 11C17.2091 11 19 12.7909 19 15V35L42 40V44"
+                    stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path
+                    d="M11 25.2501V25.2501C6.90264 23.65 4 19.664 4 15C4 8.92487 8.92487 4 15 4C21.0751 4 26 8.92487 26 15C26 19.664 23.0974 23.65 19 25.2501"
+                    stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>MANUAL AI
+              </button>
+            </div>
+          </div>
+          <div class="_listWrapper_g0rk5_12">
+            <h2>TIME:</h2>
+            <div class="_list_g0rk5_12">
+              <button class="">3 MIN</button>
+              <button class="_selected_g0rk5_46">5 MIN</button>
+              <button class="">7 MIN</button>
+              <button class="">10 MIN</button>
+            </div>
+          </div>
+        </div>
+        <!-- сигнал  -->
+        <div class="_desktopPendingWrapper_1ix92_417"></div>
+        <div class="_getContainer_1ix92_16">
+          <div class="_onGetSignalContainer_1ix92_29"><button type="button"
+              class="_button_13fxj_1 _action_13fxj_13"><span>Получить новый сигнал</span><svg width="16" height="16"
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1166_5278)">
+                  <path
+                    d="M15.997 8.57534C15.9773 8.33903 15.8195 8.14211 15.6027 8.06334L5.17449 4.44001C4.95765 4.36124 4.72109 4.42032 4.56339 4.57786C4.40568 4.73539 4.34654 4.9717 4.4254 5.18831L8.05261 15.6054C8.13146 15.822 8.32859 15.9795 8.56515 15.9992C8.58486 15.9992 8.60457 15.9992 8.60457 15.9992C8.82142 15.9992 9.01855 15.8811 9.11712 15.6842L10.6153 12.8682L12.5669 14.8374C12.6852 14.9556 12.8232 15.0146 12.9809 15.0146C13.1386 15.0146 13.2963 14.9556 13.3948 14.8374L14.8142 13.4196C14.9325 13.3014 14.9916 13.1636 14.9916 13.006C14.9916 12.8485 14.9325 12.691 14.8142 12.5925L12.8429 10.643L15.6816 9.14641C15.8984 9.02825 16.0167 8.81164 15.997 8.57534Z"
+                    fill="#010101"></path>
+                  <path
+                    d="M2.021 1.21141C1.78444 0.975104 1.40989 0.975104 1.19305 1.21141C0.956485 1.44772 0.956485 1.82187 1.19305 2.03848L2.43497 3.27908C2.55325 3.39723 2.71096 3.4563 2.84895 3.4563C2.98694 3.4563 3.14464 3.39723 3.26292 3.27908C3.49948 3.04277 3.49948 2.66862 3.26292 2.45201L2.021 1.21141Z"
+                    fill="#010101"></path>
+                  <path
+                    d="M5.48957 2.60907C5.54871 2.88476 5.78527 3.08168 6.06125 3.08168C6.10068 3.08168 6.1401 3.08168 6.17953 3.06199C6.49494 3.00291 6.71178 2.68784 6.65264 2.37277L6.29781 0.482333C6.23867 0.167261 5.92326 -0.0493516 5.60785 0.00972444C5.29244 0.0688005 5.0756 0.383873 5.13473 0.698945L5.48957 2.60907Z"
+                    fill="#010101"></path>
+                  <path
+                    d="M2.59215 5.50383L0.699693 5.14937C0.384284 5.0903 0.0688742 5.30691 0.00973485 5.62198C-0.0494044 5.93705 0.16744 6.25213 0.482849 6.3112L2.37531 6.66566C2.41473 6.66566 2.45416 6.68535 2.49359 6.68535C2.76957 6.68535 3.02584 6.48843 3.06527 6.21274C3.1244 5.85829 2.90756 5.56291 2.59215 5.50383Z"
+                    fill="#010101"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1166_5278">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg></button></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="_wrapper_7z5zm_1">
+      <div class="_container_7z5zm_9">
+        <div class="_marqueeContainer_7z5zm_19">
+          <div>
+            <div class="rfm-marquee-container _marqueeContainer_v1xye_1"
+              style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;">
+              <div class="rfm-marquee"
+                style="--play: running; --direction: reverse; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                <div class="rfm-initial-child-container">
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="rfm-marquee"
+                style="--play: running; --direction: reverse; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rfm-marquee-container _marqueeContainer_v1xye_1"
+              style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;">
+              <div class="rfm-marquee"
+                style="--play: running; --direction: normal; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                <div class="rfm-initial-child-container">
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="rfm-marquee"
+                style="--play: running; --direction: normal; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="_topBorderContainer_7z5zm_27">
+          <div class="_topContainer_7z5zm_33">
+            <a class="_link_18p1q_1" href="/">TradeSignal</a>
+            <div class="_socials_7z5zm_43">
+              <a href="https://t.me/max_supportTraide" target="_blank">
+                <img src="assets/tg.svg" alt="">
+              </a>
+              <a href="mailto:maks.lavrinovich00@mail.ru" target="_blank">
+                <img src="assets/mail.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="_info_7z5zm_54">
+          <div>
+            <div class="_copyright_7z5zm_62">Copyright © 2025 TradeSignal | Все права защищены</div>
+          </div>
+          <div class="_links_7z5zm_71">
+            <a href="terms.html" target="_blank">
+              <div class="_link_7z5zm_71">Условия использования</div>
+            </a>
+            <div class="_separator_7z5zm_80">|</div>
+            <a href="privacy-policy.html" target="_blank">
+              <div class="_link_7z5zm_71">Политика конфиденциальности</div>
+            </a>
+            <div class="_separator_7z5zm_80">|</div>
+            <a href="cookie-policy.html" target="_blank">
+              <div class="_link_7z5zm_71">Политика файлов cookie</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-root">
+    <div class="_modal_b50nl_1" style="opacity: 1;">
+      <div class="_modalContent_b50nl_28 _infoModal_g0rk5_349" style="opacity: 1; transform: none;">
+        <div class="_closeBtn_b50nl_42"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_575_13601)">
+              <g filter="url(#filter0_d_575_13601)">
+                <path
+                  d="M5.85967 34.1397C3.94947 32.2947 2.42582 30.0878 1.37764 27.6478C0.329462 25.2077 -0.222262 22.5833 -0.245339 19.9277C-0.268415 17.2721 0.237619 14.6385 1.24324 12.1806C2.24885 9.72266 3.73392 7.48962 5.61177 5.61177C7.48962 3.73392 9.72266 2.24885 12.1806 1.24324C14.6385 0.237619 17.2721 -0.268415 19.9277 -0.245339C22.5833 -0.222262 25.2077 0.329462 27.6478 1.37764C30.0878 2.42582 32.2947 3.94947 34.1397 5.85967C37.7828 9.63171 39.7987 14.6838 39.7532 19.9277C39.7076 25.1716 37.6042 30.1879 33.896 33.896C30.1879 37.6042 25.1716 39.7076 19.9277 39.7532C14.6838 39.7987 9.63171 37.7828 5.85967 34.1397ZM22.7997 19.9997L28.4597 14.3397L25.6397 11.5197L19.9997 17.1797L14.3397 11.5197L11.5197 14.3397L17.1797 19.9997L11.5197 25.6597L14.3397 28.4797L19.9997 22.8197L25.6597 28.4797L28.4797 25.6597L22.8197 19.9997H22.7997Z"
+                  fill="#2B8EF3"></path>
+              </g>
+            </g>
+            <defs>
+              <filter id="filter0_d_575_13601" x="-20.2461" y="-20.2461" width="80" height="80"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"></feColorMatrix>
+                <feOffset></feOffset>
+                <feGaussianBlur stdDeviation="10"></feGaussianBlur>
+                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_575_13601"></feBlend>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_575_13601" result="shape"></feBlend>
+              </filter>
+              <clipPath id="clip0_575_13601">
+                <rect width="40" height="40" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg></div>
+        <div>
+          <span class="_confetti_g0rk5_79"
+            style="top: 6.53198%; left: -32.8324%; animation-delay: 4.11729s; background-color: rgb(231, 76, 60);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 53.8353%; left: -6.78292%; animation-delay: 4.93045s; background-color: rgb(123, 67, 151);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 92.1983%; left: -26.0328%; animation-delay: 3.5216s; background-color: rgb(207, 106, 135);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 148.493%; left: 63.6013%; animation-delay: 4.67224s; background-color: rgb(207, 106, 135);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 59.3732%; left: 11.8645%; animation-delay: 0.543118s; background-color: rgb(220, 36, 48);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 33.3892%; left: -14.1786%; animation-delay: 1.12663s; background-color: rgb(123, 67, 151);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 2.34154%; left: 43.7567%; animation-delay: 0.124775s; background-color: rgb(231, 76, 60);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 21.0849%; left: 76.6307%; animation-delay: 4.04989s; background-color: rgb(207, 106, 135);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 86.378%; left: -7.21444%; animation-delay: 0.514953s; background-color: rgb(142, 68, 173);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 88.5186%; left: 58.6227%; animation-delay: 1.92438s; background-color: rgb(179, 55, 113);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 66.0208%; left: -29.9476%; animation-delay: 3.65873s; background-color: rgb(207, 106, 135);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 103.045%; left: -26.4659%; animation-delay: 3.41112s; background-color: rgb(155, 89, 182);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 147.207%; left: -17.2846%; animation-delay: 2.92543s; background-color: rgb(190, 46, 221);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -49.1923%; left: 43.993%; animation-delay: 0.848975s; background-color: rgb(231, 76, 60);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 51.532%; left: -7.37817%; animation-delay: 1.06627s; background-color: rgb(192, 57, 43);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -22.3951%; left: 19.8806%; animation-delay: 2.18775s; background-color: rgb(220, 36, 48);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 9.08377%; left: 92.7855%; animation-delay: 2.72587s; background-color: rgb(207, 106, 135);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 112.361%; left: 125.07%; animation-delay: 3.96532s; background-color: rgb(123, 67, 151);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 64.1501%; left: 0.857992%; animation-delay: 2.14188s; background-color: rgb(231, 76, 60);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -13.8444%; left: 138.374%; animation-delay: 3.33236s; background-color: rgb(192, 57, 43);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 26.6807%; left: 143.911%; animation-delay: 4.93249s; background-color: rgb(192, 57, 43);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -25.389%; left: 141.587%; animation-delay: 0.166346s; background-color: rgb(123, 67, 151);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 136.239%; left: 69.8906%; animation-delay: 4.80161s; background-color: rgb(211, 84, 0);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -37.9558%; left: 76.8058%; animation-delay: 4.97681s; background-color: rgb(179, 55, 113);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -4.27381%; left: 101.986%; animation-delay: 4.2503s; background-color: rgb(179, 55, 113);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 19.1582%; left: -34.6458%; animation-delay: 4.24601s; background-color: rgb(155, 89, 182);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 14.8486%; left: 138.723%; animation-delay: 3.57934s; background-color: rgb(220, 36, 48);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -48.2505%; left: -3.0231%; animation-delay: 4.09984s; background-color: rgb(179, 55, 113);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 70.4938%; left: 15.7261%; animation-delay: 4.79126s; background-color: rgb(211, 84, 0);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -17.7461%; left: 39.3809%; animation-delay: 4.51456s; background-color: rgb(155, 89, 182);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 128.848%; left: 48.912%; animation-delay: 2.06143s; background-color: rgb(142, 68, 173);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 77.3033%; left: -44.7045%; animation-delay: 0.28511s; background-color: rgb(207, 106, 135);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 137.535%; left: 139.523%; animation-delay: 2.06641s; background-color: rgb(142, 68, 173);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 77.667%; left: 118.743%; animation-delay: 3.53413s; background-color: rgb(190, 46, 221);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 132.949%; left: -6.39445%; animation-delay: 1.90671s; background-color: rgb(155, 89, 182);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 13.24%; left: 111.248%; animation-delay: 4.59078s; background-color: rgb(211, 84, 0);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 15.0008%; left: 21.2093%; animation-delay: 2.08074s; background-color: rgb(190, 46, 221);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 52.7706%; left: 111.35%; animation-delay: 0.92367s; background-color: rgb(192, 57, 43);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 113.178%; left: 21.1861%; animation-delay: 1.3801s; background-color: rgb(207, 106, 135);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 8.45923%; left: 108.849%; animation-delay: 0.911049s; background-color: rgb(211, 84, 0);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 17.1628%; left: 104.271%; animation-delay: 0.766876s; background-color: rgb(192, 57, 43);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 105.265%; left: 27.0499%; animation-delay: 4.65067s; background-color: rgb(123, 67, 151);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -12.0745%; left: 140.87%; animation-delay: 2.93302s; background-color: rgb(142, 68, 173);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 102.232%; left: 121.541%; animation-delay: 2.335s; background-color: rgb(190, 46, 221);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: -10.7813%; left: 141.462%; animation-delay: 1.92456s; background-color: rgb(231, 76, 60);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 11.7758%; left: 146.844%; animation-delay: 0.716404s; background-color: rgb(211, 84, 0);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 28.3063%; left: -21.9499%; animation-delay: 2.72625s; background-color: rgb(192, 57, 43);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 11.1736%; left: 20.1044%; animation-delay: 2.81375s; background-color: rgb(211, 84, 0);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 39.4808%; left: 62.1738%; animation-delay: 1.45302s; background-color: rgb(207, 106, 135);"></span><span
+            class="_confetti_g0rk5_79"
+            style="top: 13.908%; left: -19.0456%; animation-delay: 0.77995s; background-color: rgb(190, 46, 221);"></span>
+        </div>
+        <h2 class="_infoModalTitle_g0rk5_444"><svg width="800px" height="800px" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>ic_fluent_bot_24_filled</title>
+              <desc>Created with Sketch.</desc>
+              <g id="\uD83D\uDD0D-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="ic_fluent_bot_24_filled" fill="#ffffff" fill-rule="nonzero">
+                  <path
+                    d="M17.7530511,13.999921 C18.9956918,13.999921 20.0030511,15.0072804 20.0030511,16.249921 L20.0030511,17.1550008 C20.0030511,18.2486786 19.5255957,19.2878579 18.6957793,20.0002733 C17.1303315,21.344244 14.8899962,22.0010712 12,22.0010712 C9.11050247,22.0010712 6.87168436,21.3444691 5.30881727,20.0007885 C4.48019625,19.2883988 4.00354153,18.2500002 4.00354153,17.1572408 L4.00354153,16.249921 C4.00354153,15.0072804 5.01090084,13.999921 6.25354153,13.999921 L17.7530511,13.999921 Z M11.8985607,2.00734093 L12.0003312,2.00049432 C12.380027,2.00049432 12.6938222,2.2826482 12.7434846,2.64872376 L12.7503312,2.75049432 L12.7495415,3.49949432 L16.25,3.5 C17.4926407,3.5 18.5,4.50735931 18.5,5.75 L18.5,10.254591 C18.5,11.4972317 17.4926407,12.504591 16.25,12.504591 L7.75,12.504591 C6.50735931,12.504591 5.5,11.4972317 5.5,10.254591 L5.5,5.75 C5.5,4.50735931 6.50735931,3.5 7.75,3.5 L11.2495415,3.49949432 L11.2503312,2.75049432 C11.2503312,2.37079855 11.5324851,2.05700336 11.8985607,2.00734093 L12.0003312,2.00049432 L11.8985607,2.00734093 Z M9.74928905,6.5 C9.05932576,6.5 8.5,7.05932576 8.5,7.74928905 C8.5,8.43925235 9.05932576,8.99857811 9.74928905,8.99857811 C10.4392523,8.99857811 10.9985781,8.43925235 10.9985781,7.74928905 C10.9985781,7.05932576 10.4392523,6.5 9.74928905,6.5 Z M14.2420255,6.5 C13.5520622,6.5 12.9927364,7.05932576 12.9927364,7.74928905 C12.9927364,8.43925235 13.5520622,8.99857811 14.2420255,8.99857811 C14.9319888,8.99857811 15.4913145,8.43925235 15.4913145,7.74928905 C15.4913145,7.05932576 14.9319888,6.5 14.2420255,6.5 Z"
+                    id="\uD83C\uDFA8-Color"></path>
+                </g>
+              </g>
+            </g>
+          </svg>ChatGPT 4.0</h2>
+        <p class="_infoModalText_g0rk5_462">Передовая модель искусственного интеллекта от OpenAI, использующая глубокое
+          обучение для анализа рыночных данных. Она обрабатывает огромное количество информации в реальном времени,
+          выявляя потенциальные сигналы с высокой точностью. Алгоритм учитывает не только технические данные, но и
+          фундаментальные факторы, новости и поведенческий анализ рынка.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- кнопки  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lists = document.querySelectorAll("._list_g0rk5_12");
+
+      lists.forEach(list => {
+        const buttons = list.querySelectorAll("button");
+
+        buttons.forEach(btn => {
+          btn.addEventListener("click", () => {
+            buttons.forEach(b => b.classList.remove("_selected_g0rk5_46"));
+            btn.classList.add("_selected_g0rk5_46");
+          });
+        });
+      });
+    });
+  </script>
+
+  <!-- модалки информации  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const aiGroup = document.querySelectorAll("._listWrapper_g0rk5_12")[0];
+      const buttons = aiGroup.querySelectorAll("button");
+      const infoButton = document.querySelector("._info_g0rk5_300");
+      const modalTextElement = document.querySelector('._infoModalText_g0rk5_462');
+
+      let selectedIndex = null;
+
+      const infoData = {
+        "ChatGPT 4.0": {
+          title: `
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.75 14c1.24 0 2.25 1 2.25 2.25v.9c0 1.1-.48 2.14-1.3 2.85C17.13 21.34 14.89 22 12 22s-5.13-.66-6.7-2.01A3.73 3.73 0 0 1 4 17.15v-.9C4 15 5 14 6.25 14h11.5ZM12 2c.38 0 .7.28.75.65v.85H16.25C17.49 3.5 18.5 4.5 18.5 5.75v4.5c0 1.24-1 2.25-2.25 2.25h-9.5C5.5 12.5 4.5 11.5 4.5 10.25v-4.5C4.5 4.5 5.5 3.5 6.75 3.5H11V2.65c0-.37.3-.65.68-.65H12ZM9.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Zm4.5 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z"></path>
+        </svg>
+        ChatGPT 4.0
+      `,
+          text: `Передовая модель искусственного интеллекта от OpenAI, использующая глубокое обучение для анализа рыночных данных. 
+             Она обрабатывает огромное количество информации в реальном времени, выявляя потенциальные сигналы с высокой точностью. 
+             Алгоритм учитывает не только технические данные, но и фундаментальные факторы, новости и поведенческий анализ рынка.`
+        },
+        "Signal1% AI": {
+          title: `<svg width="800px" height="800px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-1,
+                        .cls-2 {
+                          fill-rule: evenodd;
+                        }
+
+                        .cls-2 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Icon_24px_MLEngine_Color</title>
+                    <g data-name="Product Icons">
+                      <g>
+                        <polygon class="cls-1"
+                          points="16.64 15.13 17.38 13.88 20.91 13.88 22 12 19.82 8.25 16.75 8.25 15.69 6.39 14.5 6.39 14.5 5.13 16.44 5.13 17.5 7 19.09 7 16.9 3.25 12.63 3.25 12.63 8.25 14.36 8.25 15.09 9.5 12.63 9.5 12.63 12 14.89 12 15.94 10.13 18.75 10.13 19.47 11.38 16.67 11.38 15.62 13.25 12.63 13.25 12.63 17.63 16.03 17.63 15.31 18.88 12.63 18.88 12.63 20.75 16.9 20.75 20.18 15.13 18.09 15.13 17.36 16.38 14.5 16.38 14.5 15.13 16.64 15.13">
+                        </polygon>
+                        <polygon class="cls-2"
+                          points="7.36 15.13 6.62 13.88 3.09 13.88 2 12 4.18 8.25 7.25 8.25 8.31 6.39 9.5 6.39 9.5 5.13 7.56 5.13 6.5 7 4.91 7 7.1 3.25 11.38 3.25 11.38 8.25 9.64 8.25 8.91 9.5 11.38 9.5 11.38 12 9.11 12 8.06 10.13 5.25 10.13 4.53 11.38 7.33 11.38 8.38 13.25 11.38 13.25 11.38 17.63 7.97 17.63 8.69 18.88 11.38 18.88 11.38 20.75 7.1 20.75 3.82 15.13 5.91 15.13 6.64 16.38 9.5 16.38 9.5 15.13 7.36 15.13">
+                        </polygon>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                Signal1% AI`,
+          text: `Первая версия нашего собственного алгоритма, разработанного на основе машинного обучения. Он анализирует исторические тренды, выявляет закономерности в рыночных движениях и использует их для прогнозирования будущих изменений. Алгоритм обучен на данных за несколько лет и способен находить сигналы на основе классических технических индикаторов и статистического анализа.`
+        },
+        "VIP Indicator": {
+          title: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  fill="#ffffff" stroke="#ffffff">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>VIP_2_line</title>
+                    <g id="\u9875\u9762-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Business" transform="translate(-192.000000, -192.000000)">
+                        <g id="VIP_2_line" transform="translate(192.000000, 192.000000)">
+                          <path
+                            d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                            id="MingCute" fill-rule="nonzero"></path>
+                          <path
+                            d="M12.9873,5.73973 C13.5921,5.39576 14,4.74552 14,4 C14,2.89543 13.1046,2 12,2 C10.8954,2 10,2.89543 10,4 C10,4.74719 10.4097,5.39868 11.0168,5.74204 L11.0078,5.7603 C10.3521,7.1269 9.44232,9.08472 8.03664,9.81971 C6.88336,10.4227 5.22628,10.1194 3.99634,9.89437 C3.94213,9.11523 3.29291,8.5 2.5,8.5 C1.67157,8.5 1,9.17157 1,10 C1,10.7347 1.52816,11.346 2.22549,11.4749 L5.17264,19.0836 C5.62005,20.2387 6.7314,21 7.97011,21 L16.0299,21 C17.2686,21 18.3799,20.2387 18.8274,19.0836 L21.7745,11.4749 C22.4718,11.346 23,10.7347 23,10 C23,9.17157 22.3284,8.5 21.5,8.5 C20.7223,8.5 20.0828,9.09184 20.0074,9.8497 C18.7483,10.013 17.1251,10.2213 15.9634,9.61383 C14.5859,8.89361 13.6634,7.07075 12.9873,5.73973 Z M12.0254,8.10728 C12.7931,9.35273 13.7136,10.6944 15.0366,11.3862 C16.3643,12.0804 17.9971,12.0451 19.4573,11.9201 L16.9624,18.3612 C16.8132,18.7462 16.4428,19 16.0299,19 L7.97011,19 C7.5572,19 7.18676,18.7462 7.03762,18.3612 L4.57675,12.008 C6.01588,12.1916 7.64394,12.2819 8.96336,11.5921 C10.3405,10.872 11.263,9.42043 12.0254,8.10728 Z"
+                            id="\u5F62\u72B6" fill="#fff"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                VIP Indicator`,
+          text: `VIP-алгоритм — это эксклюзивная модель анализа, разработанная для профессиональных трейдеров, стремящихся к максимальной точности и эффективности. Этот алгоритм использует передовые технологии машинного обучения, анализирует огромные объемы данных в реальном времени и учитывает уникальные рыночные паттерны. VIP-алгоритм интегрирует фундаментальный анализ, технические индикаторы и поведенческие данные, чтобы предоставлять сигналы с высокой степенью надежности. Обратите внимание: он будет только пользователям с балансом от $1000.`
+        },
+        "1% SQUAD": {
+          title: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-number-13-small">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M8 8h1v8"></path>
+                  <path
+                    d="M13 8h2.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-1.5h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-2.5">
+                  </path>
+                </svg>1% SQUAD`,
+          text: `1% SQUAD - это уникальный аналитический индикатор, созданный в сотрудничестве с закрытым сообществом трейдеров. Он учитывает авторские паттерны, сигналы от опытных участников и нестандартные подходы к анализу рынка. Хотя он открыт для всех пользователей, наибольшую эффективность показывает в связке с рекомендациями и стратегиями сообщества. Присоединиться к сообществу можно через Telegram-бота: <a href="https://t.me/+TbApDiPEsqZmMzMy" target="_blank" rel="noopener noreferrer">https://t.me/+TbApDiPEsqZmMzMy</a>..`
+        },
+        "Signal1% AI v2": {
+          title: `<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-2 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-3 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Icon_24px_CloudBuild_Color</title>
+                    <g data-name="Product Icons">
+                      <g>
+                        <g>
+                          <g>
+                            <polygon class="cls-1"
+                              points="12.15 16.24 15.67 14.21 15.67 10.15 14.49 9.46 10.97 15.56 12.15 16.24"></polygon>
+                            <polygon class="cls-2"
+                              points="8.63 10.15 8.63 14.21 9.81 14.89 13.34 8.8 12.15 8.11 8.63 10.15"></polygon>
+                          </g>
+                        </g>
+                      </g>
+                      <polygon class="cls-3"
+                        points="11.46 17.45 7.24 15.01 7.24 10.15 3.49 7.98 3.49 17.18 11.46 21.78 11.46 17.45">
+                      </polygon>
+                      <polygon class="cls-3"
+                        points="7.93 8.95 12.15 6.51 16.37 8.95 20.13 6.78 12.15 2.17 4.17 6.78 7.93 8.95"></polygon>
+                      <polygon class="cls-3"
+                        points="17.06 15.01 12.84 17.45 12.84 21.78 20.82 17.18 20.82 7.98 17.06 10.15 17.06 15.01">
+                      </polygon>
+                    </g>
+                  </g>
+                </svg>Signal1% AI v2`,
+          text: `Улучшенная версия Signal1% AI, в которой добавлены более сложные модели машинного обучения. Она использует дополнительные параметры рынка, такие как объем торгов, корреляции между активами и временные паттерны. Улучшенная оптимизация алгоритмов позволяет повысить точность прогнозов, снизить количество ложных сигналов и учитывать больше рыночных условий при анализе.`
+        },
+        "Indicators + ChatGPT 3.5": {
+          title: `<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1,
+                        .cls-3 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-2 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-2,
+                        .cls-3,
+                        .cls-4 {
+                          fill-rule: evenodd;
+                        }
+
+                        .cls-4 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Icon_24px_DeployManage_Color</title>
+                    <g data-name="Product Icons">
+                      <g>
+                        <rect class="cls-1" x="10" y="17" width="4" height="4"></rect>
+                        <polygon class="cls-2" points="19 10.84 14.66 6.51 13.65 7.52 19 12.85 19 10.84"></polygon>
+                        <polygon class="cls-3" points="15.67 9.53 13.65 7.52 14.66 6.51 15.67 7.52 15.67 9.53">
+                        </polygon>
+                        <polygon class="cls-4" points="10.94 12.24 9.93 11.23 14.66 6.51 15.67 7.52 10.94 12.24">
+                        </polygon>
+                        <polygon class="cls-2" points="10.94 12.24 8.08 9.39 9.1 8.38 11.95 11.23 10.94 12.24">
+                        </polygon>
+                        <polygon class="cls-3" points="10.08 11.38 8.08 9.39 9.1 8.38 10.08 9.36 10.08 11.38"></polygon>
+                        <polygon class="cls-4" points="5.44 13.99 10.08 9.36 9.07 8.35 5 12.41 5 13.99 5.44 13.99">
+                        </polygon>
+                        <path class="cls-2"
+                          d="M22,4.05a1.24,1.24,0,0,0-1-1H3a1.24,1.24,0,0,0-1,1V17a1.19,1.19,0,0,0,1,1H21a1.19,1.19,0,0,0,1-1V4.05ZM20,16H4V5H20Z">
+                        </path>
+                        <path class="cls-2" d="M8,22c0-.69.31-1,1-1h6c.69,0,1,.31,1,1Z"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>Indicators + ChatGPT 3.5`,
+          text: `Комбинированный метод анализа, использующий популярные технические индикаторы (например, RSI, MACD, Bollinger Bands) в сочетании с искусственным интеллектом ChatGPT 3.5. AI анализирует показания индикаторов, определяет возможные точки входа и выхода, а также интерпретирует данные для получения наиболее вероятных сценариев развития рынка. Метод подходит для краткосрочной и среднесрочной торговли.`
+        },
+        "1%Trade AI PLUS": {
+          title: `<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-2 {
+                          fill: #ffffff;
+                        }
+
+                        .cls-3 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Icon_24px_CloudAPIs_Color</title>
+                    <g data-name="Product Icons">
+                      <path class="cls-1" d="M16.49,12,12,16.49,7.51,12,12,7.51ZM12,14.91,14.91,12,12,9.09,9.09,12Z">
+                      </path>
+                      <polygon class="cls-2" points="16.33 15.02 18.98 15.02 22 12 19.35 12 16.33 15.02"></polygon>
+                      <polygon class="cls-3" points="16.33 8.98 19.35 12 22 12 18.98 8.98 16.33 8.98"></polygon>
+                      <polygon class="cls-3" points="7.67 8.98 5.02 8.98 2 12 4.65 12 7.67 8.98"></polygon>
+                      <polygon class="cls-2" points="2 12 5.02 15.02 7.67 15.02 4.65 12 2 12"></polygon>
+                      <polygon class="cls-3" points="8.98 5.02 8.98 7.67 12 4.65 12 2 8.98 5.02"></polygon>
+                      <polygon class="cls-2" points="12 2 12 4.65 15.02 7.67 15.02 5.02 12 2"></polygon>
+                      <polygon class="cls-3" points="8.98 16.33 8.98 18.98 12 22 12 19.35 8.98 16.33"></polygon>
+                      <polygon class="cls-2" points="12 19.35 12 22 15.02 18.98 15.02 16.33 12 19.35"></polygon>
+                    </g>
+                  </g>
+                </svg>1%Trade AI PLUS`,
+          text: `Эксклюзивная система анализа, объединяющая машинное обучение, технические индикаторы и авторские алгоритмы предсказания трендов. Signal1% AI Plus учитывает не только классические методы анализа, но и данные об активности крупных игроков, ликвидность рынка и структуру ордеров. Это позволяет формировать наиболее точные прогнозы, снижая риск и повышая эффективность торговли.`
+        },
+        "MANUAL AI": {
+          title: `<svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
+                  <path d="M11 44V15C11 12.7909 12.7909 11 15 11C17.2091 11 19 12.7909 19 15V35L42 40V44"
+                    stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path
+                    d="M11 25.2501V25.2501C6.90264 23.65 4 19.664 4 15C4 8.92487 8.92487 4 15 4C21.0751 4 26 8.92487 26 15C26 19.664 23.0974 23.65 19 25.2501"
+                    stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>MANUAL AI`,
+          text: `Метод Manual предоставляет пользователю возможность самостоятельно выбирать валютную пару для анализа. Искусственный интеллект подключается к процессу и фокусируется именно на том активе, который указал трейдер. Такой подход позволяет гибко адаптировать анализ под индивидуальные стратегии и предпочтения. В отличие от полностью автоматических алгоритмов, здесь ключевая роль отводится выбору пользователя, а AI обеспечивает глубокую обработку данных по выбранному инструменту, выявляя возможные сигналы и сценарии развития рынка.`
+        }
+      };
+
+      // Выбор пункта
+      buttons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach(b => b.classList.remove("_selected_g0rk5_46"));
+          btn.classList.add("_selected_g0rk5_46");
+          selectedIndex = index;
+        });
+      });
+
+      // Кнопка "Информация"
+      infoButton.addEventListener("click", () => {
+        if (selectedIndex === null) {
+          alert("Сначала выберите пункт!");
+          return;
+        }
+
+        const selectedName = buttons[selectedIndex].innerText.trim(); // название из кнопки
+        const data = infoData[selectedName]; // достаём из infoData
+
+        if (!data) {
+          console.error("Нет данных для:", selectedName);
+          return;
+        }
+
+        const originalModal = document.querySelector("._modal_b50nl_1");
+        if (!originalModal) {
+          console.error("Модалка не найдена на странице!");
+          return;
+        }
+
+        const modalClone = originalModal.cloneNode(true);
+        const modalTitle = modalClone.querySelector("._infoModalTitle_g0rk5_444");
+        const modalText = modalClone.querySelector("._infoModalText_g0rk5_462");
+        const closeBtn = modalClone.querySelector("._closeBtn_b50nl_42");
+
+        if (!modalTitle || !modalText || !closeBtn) {
+          console.error("Не найдены необходимые элементы внутри модалки!");
+          return;
+        }
+
+        // обновляем содержимое модалки
+        modalTitle.innerHTML = data.title;
+        modalText.innerHTML = data.text;
+
+        // Показываем модалку
+        modalClone.style.display = "flex";
+        document.body.appendChild(modalClone);
+
+        // Закрытие
+        closeBtn.addEventListener("click", () => {
+          document.body.removeChild(modalClone);
+        }, { once: true });
+      });
+
+    });
+  </script>
+
+  <!-- VIP Indicator / MANUAL AI -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const aiInfoButtons = document.querySelectorAll("._list_g0rk5_12.ai-group button");
+      const container = document.querySelector("._getContainer_1ix92_16");
+
+      const templates = {
+        default: `
+      <div class="_onGetSignalContainer_1ix92_29">
+        <button type="button" class="_button_13fxj_1 _action_13fxj_13">
+          <span>Получить новый сигнал</span>
+        </button>
+      </div>
+    `,
+        vip: `
+      <div class="_onGetSignalContainer_1ix92_29">
+        <p class="_vipSignalBalanceCheckText_1ix92_37">
+          Для использования этого индикатора ваш баланс должен быть больше $1000. Ваш текущий баланс $11.5.
+        </p>
+        <button type="button" class="_button_13fxj_1 _action_13fxj_13" disabled>
+          <span>Получить новый сигнал</span>
+        </button>
+        <button type="button" class="_button_13fxj_1 _action_13fxj_13">
+          <span>Проверить баланс</span>
+        </button>
+      </div>
+    `,
+        manual: ` 
+      <div class="_wrapper_1jk17_1">
+          <h2 class="_title_1jk17_14">Пара: </h2>
+          <div class="_mainContainer_1jk17_9"><button class="_button_1jk17_30 _manualButton" tabindex="0">
+              <div>
+                <div class="_imagesContainer_1lcee_1"><span class="_logo_1lcee_7">
+                  <svg width="18" height="18"
+                      viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#F8F9FD" d="M0 0h18v18H0z" shape-rendering="crispEdges"></path>
+                      <path d="M11 4h7V0h-7v4zM0 18h18v-4H0v4zM11 11h7V7h-7v4z" fill="#EF5350"
+                        shape-rendering="crispEdges"></path>
+                      <path fill="#1E88E9" d="M0 0h11v11H0z" shape-rendering="crispEdges"></path>
+                      <path
+                        d="M2.42 1.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM2.42 4.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM2.42 7.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM5.42 1.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM5.42 4.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM5.42 7.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM8.42 1.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM8.42 4.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM8.42 7.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7z"
+                        fill="#F8F9FD"></path>
+                    </svg>
+                  </span>
+                  <span class="_logo_1lcee_7">
+                      <svg width="18" height="18" viewBox="0 0 18 18"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h18v18H0V0z" fill="#1565C0"></path>
+                      <path
+                        d="M8.95 2l.37 1.14h1.2l-.97.7.37 1.14-.97-.7-.96.7.36-1.13-.96-.7h1.2L8.94 2zM4.04 4.04l1.07.54.84-.84-.18 1.18 1.06.54-1.18.19-.19 1.18-.54-1.06-1.18.18.84-.84-.54-1.07zM2 8.95l1.14-.37v-1.2l.7.97L4.99 8l-.7.96.7.97-1.13-.37-.7.97v-1.2L2 8.95zM4.04 13.86l.54-1.06-.84-.85 1.18.19.54-1.07.19 1.19 1.18.18-1.06.55.18 1.18-.84-.85-1.07.54zM8.95 15.9l-.37-1.14h-1.2l.97-.7L8 12.92l.96.7.97-.7-.37 1.14.97.7h-1.2l-.37 1.14zM13.86 13.86l-1.06-.54-.85.85.19-1.18-1.07-.55 1.19-.18.18-1.19.55 1.07 1.18-.19-.85.85.54 1.06zM15.9 8.95l-1.14.37v1.2l-.7-.97-1.14.37.7-.97-.7-.96 1.14.36.7-.96v1.2l1.14.36zM13.86 4.04l-.54 1.07.85.84-1.18-.18-.55 1.06-.18-1.18-1.19-.19 1.07-.54-.19-1.18.85.84 1.06-.54z"
+                        fill="#FDD835"></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              
+              <span class="_selectedPair_1jk17_21">EURUSD</span><svg width="12" height="7" viewBox="0 0 12 7"
+                fill="none" xmlns="http://www.w3.org/2000/svg" class="_arrowDown_1jk17_60">
+                <path
+                  d="M6.00005 6.97505C5.86672 6.97505 5.73772 6.95005 5.61305 6.90005C5.48772 6.85005 5.38338 6.78338 5.30005 6.70005L0.700048 2.10005C0.516715 1.91672 0.425049 1.68338 0.425049 1.40005C0.425049 1.11671 0.516715 0.883382 0.700048 0.700048C0.883382 0.516715 1.11672 0.425049 1.40005 0.425049C1.68338 0.425049 1.91672 0.516715 2.10005 0.700048L6.00005 4.60005L9.90005 0.700048C10.0834 0.516715 10.3167 0.425049 10.6 0.425049C10.8834 0.425049 11.1167 0.516715 11.3 0.700048C11.4834 0.883382 11.575 1.11671 11.575 1.40005C11.575 1.68338 11.4834 1.91672 11.3 2.10005L6.70005 6.70005C6.60005 6.80005 6.49172 6.87072 6.37505 6.91205C6.25838 6.95405 6.13338 6.97505 6.00005 6.97505Z"
+                  fill="white"></path>
+              </svg>
+            </button>
+            <div class="_dropdown_1jk17_77">
+              <div class="_container_1jk17_88">
+                <button class="_langButton_1jk17_115 _active_1jk17_126"
+                  tabindex="0">EURUSD</button>
+                  <button class="_langButton_1jk17_115" tabindex="0">GBPJPY</button>
+                  <button
+                  class="_langButton_1jk17_115" tabindex="0">NZDJPY</button>
+                  <button class="_langButton_1jk17_115"
+                  tabindex="0">GBPUSD</button>
+                  <button class="_langButton_1jk17_115" tabindex="0">EURCAD</button>
+                  <button
+                  class="_langButton_1jk17_115" tabindex="0">USDCHF</button>
+                  <button class="_langButton_1jk17_115"
+                  tabindex="0">AUDNZD</button>
+                  <button class="_langButton_1jk17_115" tabindex="0">EURGBP</button>
+                  <button
+                  class="_langButton_1jk17_115" tabindex="0">AUDJPY</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="_desktopPendingWrapper_1ix92_417"></div>
+
+        <div class="_getContainer_1ix92_16">
+          <div class="_onGetSignalContainer_1ix92_29"><button type="button"
+              class="_button_13fxj_1 _action_13fxj_13"><span>Получить новый сигнал</span><svg width="16" height="16"
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1166_5278)">
+                  <path
+                    d="M15.997 8.57534C15.9773 8.33903 15.8195 8.14211 15.6027 8.06334L5.17449 4.44001C4.95765 4.36124 4.72109 4.42032 4.56339 4.57786C4.40568 4.73539 4.34654 4.9717 4.4254 5.18831L8.05261 15.6054C8.13146 15.822 8.32859 15.9795 8.56515 15.9992C8.58486 15.9992 8.60457 15.9992 8.60457 15.9992C8.82142 15.9992 9.01855 15.8811 9.11712 15.6842L10.6153 12.8682L12.5669 14.8374C12.6852 14.9556 12.8232 15.0146 12.9809 15.0146C13.1386 15.0146 13.2963 14.9556 13.3948 14.8374L14.8142 13.4196C14.9325 13.3014 14.9916 13.1636 14.9916 13.006C14.9916 12.8485 14.9325 12.691 14.8142 12.5925L12.8429 10.643L15.6816 9.14641C15.8984 9.02825 16.0167 8.81164 15.997 8.57534Z"
+                    fill="#010101"></path>
+                  <path
+                    d="M2.021 1.21141C1.78444 0.975104 1.40989 0.975104 1.19305 1.21141C0.956485 1.44772 0.956485 1.82187 1.19305 2.03848L2.43497 3.27908C2.55325 3.39723 2.71096 3.4563 2.84895 3.4563C2.98694 3.4563 3.14464 3.39723 3.26292 3.27908C3.49948 3.04277 3.49948 2.66862 3.26292 2.45201L2.021 1.21141Z"
+                    fill="#010101"></path>
+                  <path
+                    d="M5.48957 2.60907C5.54871 2.88476 5.78527 3.08168 6.06125 3.08168C6.10068 3.08168 6.1401 3.08168 6.17953 3.06199C6.49494 3.00291 6.71178 2.68784 6.65264 2.37277L6.29781 0.482333C6.23867 0.167261 5.92326 -0.0493516 5.60785 0.00972444C5.29244 0.0688005 5.0756 0.383873 5.13473 0.698945L5.48957 2.60907Z"
+                    fill="#010101"></path>
+                  <path
+                    d="M2.59215 5.50383L0.699693 5.14937C0.384284 5.0903 0.0688742 5.30691 0.00973485 5.62198C-0.0494044 5.93705 0.16744 6.25213 0.482849 6.3112L2.37531 6.66566C2.41473 6.66566 2.45416 6.68535 2.49359 6.68535C2.76957 6.68535 3.02584 6.48843 3.06527 6.21274C3.1244 5.85829 2.90756 5.56291 2.59215 5.50383Z"
+                    fill="#010101"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1166_5278">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg></button></div>
+        </div>
+    `
+      };
+
+      aiInfoButtons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+          aiInfoButtons.forEach(b => b.classList.remove("_selected_g0rk5_46"));
+          btn.classList.add("_selected_g0rk5_46");
+          selectedIndex = index;
+
+          const name = btn.innerText.trim();
+          container.innerHTML = "";
+
+          if (name === "MANUAL AI") {
+            container.innerHTML = templates.manual;
+
+            const manualButton = container.querySelector("._manualButton");
+            const dropdown = container.querySelector("._dropdown_1jk17_77");
+            const pairButtons = container.querySelectorAll("._langButton_1jk17_115");
+            const selectedPair = container.querySelector("._selectedPair_1jk17_21");
+
+            manualButton.addEventListener("click", (e) => {
+              e.stopPropagation();
+              dropdown.classList.toggle("_open");
+            });
+
+            pairButtons.forEach(pairBtn => {
+              pairBtn.addEventListener("click", () => {
+                selectedPair.innerText = pairBtn.innerText;
+                pairButtons.forEach(p => p.classList.remove("_active_1jk17_126"));
+                pairBtn.classList.add("_active_1jk17_126");
+                dropdown.classList.remove("_open");
+              });
+            });
+
+            document.addEventListener("click", (e) => {
+              if (!dropdown.contains(e.target) && !manualButton.contains(e.target)) {
+                dropdown.classList.remove("_open");
+              }
+            });
+
+          } else if (name === "VIP Indicator") {
+            container.innerHTML = templates.vip;
+          } else {
+            container.innerHTML = templates.default;
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

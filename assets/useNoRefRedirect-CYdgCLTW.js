@@ -1,0 +1,1 @@
+import{b as c,r as o,C as i,d as n}from"./main-DRFrzrWC.js";const d=()=>{const s=c(),{store:t}=o.useContext(i),a=n();o.useEffect(()=>{new Promise(e=>{setTimeout(()=>{e()},300)}).then(()=>{var e;t.isAuth&&!((e=t==null?void 0:t.user)!=null&&e.referralId)&&s(a("/enter-id"))}).catch(e=>console.log(e))},[t,s,a])};export{d as u};

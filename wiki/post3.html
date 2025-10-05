@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Методы управления рисками</title>
+  <!-- подключения -->
+  <link rel="stylesheet" crossorigin="" href="/assets/main-B4x2g79e.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/index-pYw0W-_w.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/CustomLink-DovV0LrB.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/CustomLink-n0Jgm_k8.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/SectionWrapper-E0lwsLBs.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/SectionWrapper-CdhYYsr6.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/InstructionModal-CSbRkftG.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/proxy-B9g5KbkS.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/InstructionModal-DNmkMxU9.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/MainButton-CN3kiotW.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/MainButton-CGgs3d4p.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/CustomHelmet-BI_KvzLr.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/index-rO_X4leR.css">
+  <!-- script -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KJCLQLQ8LJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KJCLQLQ8LJ");
+  </script>
+  <script type="module" crossorigin="" src="/assets/main-CUM0TpEs.js"></script>
+  <!-- доп стили  -->
+  <style type="text/css">
+    .rfm-marquee-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: var(--width);
+      transform: var(--transform);
+    }
+
+    .rfm-marquee-container:hover div {
+      animation-play-state: var(--pause-on-hover);
+    }
+
+    .rfm-marquee-container:active div {
+      animation-play-state: var(--pause-on-click);
+    }
+
+    .rfm-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rfm-overlay::before,
+    .rfm-overlay::after {
+      background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: var(--gradient-width);
+      z-index: 2;
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    .rfm-overlay::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .rfm-overlay::before {
+      left: 0;
+      top: 0;
+    }
+
+    .rfm-marquee {
+      flex: 0 0 auto;
+      min-width: var(--min-width);
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+      animation-play-state: var(--play);
+      animation-delay: var(--delay);
+      animation-direction: var(--direction);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .rfm-initial-child-container {
+      flex: 0 0 auto;
+      display: flex;
+      min-width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .rfm-child {
+      transform: var(--transform);
+    }
+  </style>
+</head>
+
+<body style="overflow: auto;">
+  <div id="root">
+    <div class="_wrapper_dltkq_1">
+      <div class="_container_dltkq_13">
+        <div>
+          <a class="_link_18p1q_1" href="/">TRADESIGNAL</a>
+        </div>
+        <div class="_burger_dltkq_22"></div>
+        <div class="_menuWrapper_dltkq_64">
+          <nav class="_navbarMenu_dltkq_95"></nav>
+          <a class="_navLink_dltkq_111" href="/about-us.html">О нас</a>
+          <a class="_navLink_dltkq_111" href="/instruction.html">Инструкция</a>
+          <a class="_navLink_dltkq_111 _active_dltkq_119" href="/wiki.html">Вики</a>
+          </nav>
+          <div class="_right_dltkq_103">
+            <div class="_wrapper_1xdl1_1">
+              <button class="_button_1xdl1_5">
+                <span class="_currLang_1xdl1_41">RU</span>
+              </button>
+              <!-- <div class="_dropdown_1xdl1_56">
+                <div class="_container_1xdl1_9">
+                  <button class="_langButton_1xdl1_17">UA</button>
+                  <button class="_langButton_1xdl1_17">EN</button>
+                  <button class="_langButton_1xdl1_17 _active_1xdl1_26">RU</button>
+                </div>
+              </div> -->
+            </div>
+            <a class="_supportLink_dltkq_152" href="https://t.me/max_supportTraide" target="_blank">
+              <button class=" _button_1wisi_1 _blueShadow_1wisi_12">
+              <img src="/assets/tg.svg" alt="tg">
+              </button>
+              <span>Поддержка</span>
+            </a>
+            <div class="_authLinksWrapper_dltkq_138">
+              <a class="_accountWrapper_dltkq_123" href="/register.html">
+                <button class="_button_1wisi_1 _blueShadow_1wisi_12 _account_dltkq_123">
+                  <img src="/assets/log.svg" alt="login">
+                </button>
+                <p>Регистрация</p>
+              </a>
+              <div class="_authLoginLinkWrapper_dltkq_139">
+                <p class="_or_dltkq_145">или</p>
+                <a class="_accountWrapper_dltkq_123" href="login.html">
+                  <p>Вход</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- главная  -->
+    <div class="_wrapper_1a085_1">
+      <div class="_container_1a085_6">
+        <div class="_hero_1a085_70">
+          <img src="/assets/hero-bg-CPe6uaWo.jpg" alt="График управления рисками" class="_heroImage_1a085_75">
+          <div class="_heroTextWrapper_1a085_259">
+            <div class="_heroText_1a085_82">
+              <h1>Методы управления рисками</h1>
+              <p>Откройте для себя проверенные стратегии управления рисками в трейдинге бинарными опционами. Научитесь защищать свой капитал и использовать сигналы нашей платформы эффективно.</p>
+            </div>
+          </div>
+        </div>
+        <section class="_wrapper_hq2vv_1">
+          <div class="_container_hq2vv_8">
+            <div class="_content_1a085_101">
+              <div class="_backButtonWrapper_1a085_57">
+                <a class="_link_64em0_1 _backButton_1a085_57" href="/wiki.html" target="_self">← Назад к статьям</a>
+              </div>
+              <!-- Что такое управление рисками? -->
+              <section>
+                <h2>Что такое управление рисками?</h2>
+                <div>
+                  <p>Управление рисками — это совокупность стратегий и правил, направленных на минимизацию потерь при торговле. В трейдинге бинарными опционами это особенно важно, ведь каждый контракт может закончиться либо прибылью, либо полной потерей инвестиции. Без чёткого подхода к риску трейдер быстро теряет капитал, даже если стратегия кажется выигрышной на первый взгляд.</p>
+                </div>
+                <img src="/assets/section-1-DYau0gcI.jpg" alt="Финансовый риск и управление" class="_image_1a085_127">
+              </section>
+              <blockquote class="_quote_1a085_133">“Ключ к выживанию в трейдинге — не в том, чтобы быть всегда правым, а
+                в том, чтобы потерять как можно меньше, когда ты ошибаешься.”</blockquote>
+                <!-- Основные методы -->
+              <section>
+                <h2>Основные методы управления рисками</h2>
+                <div>
+                  <p>Существует множество подходов, которые позволяют снизить влияние убыточных сделок на общий
+                    результат. Вот самые важные:</p>
+                </div>
+              </section>
+              <!-- Популярные -->
+              <section class="_highlight_1a085_142">
+                <h3>Популярные методы:</h3>
+                <ul>
+                  <li>
+                    <p>Фиксированный процент от депозита на сделку (1–5%)</p>
+                  </li>
+                  <li>
+                    <p>Использование демо-счёта для тестирования стратегий</p>
+                  </li>
+                  <li>
+                    <p>Установка дневного лимита убытков</p>
+                  </li>
+                  <li>
+                    <p>Прекращение торговли после 2–3 убыточных сделок подряд</p>
+                  </li>
+                  <li>
+                    <p>Диверсификация активов и временных интервалов</p>
+                  </li>
+                </ul>
+              </section>
+              <!-- Роль психологии -->
+              <section>
+                <h2>Роль психологии в управлении рисками</h2>
+                <div>
+                  <p>Психологическая устойчивость критически важна. Эмоции — главный враг трейдера. После серии неудач
+                    не стоит удваивать ставки в надежде отыграться. Управление рисками — это и про дисциплину.
+                    Установите правила и не отступайте от них. Ведите дневник сделок и анализируйте ошибки.</p>
+                </div>
+              </section>
+              <!-- Как помогает наша платформа -->
+              <section>
+                <h2>Как помогает наша платформа сигналов</h2>
+                <div>
+                  <p>Наша интеллектуальная система сигналов анализирует рынок в реальном времени и предоставляет точные
+                    рекомендации по открытию позиций. Благодаря встроенным фильтрам волатильности и алгоритмам расчёта
+                    вероятностей, вы можете:</p>
+                  <ul>
+                    <li>Получать сигналы с высокой точностью</li>
+                    <li>Управлять риском, используя только самые надёжные входы</li>
+                    <li>Повышать стабильность своих результатов, не тратя часы на анализ</li>
+                  </ul>
+                  <p>
+                    <a href="/register.html" node="[object Object]" target="_blank"
+                      rel="noopener noreferrer" class="_link_1a085_110">Попробуйте сигналы бесплатно</a> и включите в свою стратегию безопасную торговлю с нами.
+                  </p>
+                </div>
+                <img src="/assets/section-2-BN0pUSwr.png" alt="Платформа с торговыми сигналами" class="_image_1a085_127">
+              </section>
+              <!-- Выводы -->
+              <section>
+                <h2>Выводы</h2>
+                <div>
+                  <p>Грамотное управление рисками — это не дополнение, а основа успешной торговли. Даже самая прибыльная стратегия может быть уничтожена одной эмоцией или одной ошибкой. Используйте чёткие правила, автоматизированные сигналы и здравый смысл, чтобы построить устойчивую торговлю в долгосрочной перспективе.</p>
+                </div>
+              </section>
+              <div class="_backButtonWrapper_1a085_57">
+                <a class="_link_64em0_1 _backButton_1a085_57" href="/wiki.html" target="_self">← Назад к статьям</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="_wrapper_7z5zm_1">
+      <div class="_container_7z5zm_9">
+        <div class="_marqueeContainer_7z5zm_19">
+          <div>
+            <div class="rfm-marquee-container _marqueeContainer_v1xye_1"
+              style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;">
+              <div class="rfm-marquee"
+                style="--play: running; --direction: reverse; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                <div class="rfm-initial-child-container">
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="rfm-marquee"
+                style="--play: running; --direction: reverse; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rfm-marquee-container _marqueeContainer_v1xye_1"
+              style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;">
+              <div class="rfm-marquee"
+                style="--play: running; --direction: normal; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                <div class="rfm-initial-child-container">
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                  <div class="rfm-child" style="--transform: none;">
+                    <p class="_text_v1xye_14">
+                      TradeSignal
+                      <img src="/assets/signal.svg" alt="">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="rfm-marquee"
+                style="--play: running; --direction: normal; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="/assets/signal.svg" alt="">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="_topBorderContainer_7z5zm_27">
+          <div class="_topContainer_7z5zm_33">
+            <a class="_link_18p1q_1" href="/">TRADESIGNAL</a>
+            <div class="_socials_7z5zm_43">
+              <a href="https://t.me/max_supportTraide" target="_blank">
+                <img src="/assets/tg.svg" alt="">
+              </a>
+              <a href="mailto:maks.lavrinovich00@mail.ru" target="_blank">
+              <img src="/assets/mail.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="_info_7z5zm_54">
+          <div>
+            <div class="_copyright_7z5zm_62">Copyright © 2025 TradeSignal | Все права защищены</div>
+          </div>
+          <div class="_links_7z5zm_71">
+            <a href="/terms" target="_blank">
+              <div class="_link_7z5zm_71">Условия использования</div>
+            </a>
+            <div class="_separator_7z5zm_80">|</div>
+            <a href="privacy-policy" target="_blank">
+              <div class="_link_7z5zm_71">Политика конфиденциальности</div>
+            </a>
+            <div class="_separator_7z5zm_80">|</div>
+            <a href="/cookie-policy" target="_blank"></a>
+            <div class="_link_7z5zm_71">Политика файлов cookie</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

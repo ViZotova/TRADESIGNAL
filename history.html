@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRADESIGNAL | История сделок</title>
+
+  <!-- подключения -->
+  <link rel="stylesheet" crossorigin="" href="/assets/main-B4x2g79e.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/index-DzTJ0usA.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/useNoAuthRedirect-B2KqvuNi.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/SectionWrapper-Drd3hGIe.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/SectionWrapper-CdhYYsr6.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/InfiniteLoader-Dao877E_.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/InfiniteLoader-D1E4-LrJ.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/InstructionModal-hIUmvAYI.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/proxy-DG8c-KMX.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/InstructionModal-DNmkMxU9.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/MainButton-C1R7PPfM.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/MainButton-CGgs3d4p.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/index-BvLHYaTR.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/index-DVyvEdOj.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/index-BSxP9onF.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/useNoRefRedirect-CYdgCLTW.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/bars-CE7l5pMj.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/bitcoin-B_NPvEmV.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/AccordionCard-CzKI8inz.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/AccordionCard-QEEY7iGF.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/gold-BREShX3Z.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/gold-DHBATib1.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/useWindowWidth-BHeSHYBk.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/CTA-Db2QDku6.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/CTA-8IR3FZCi.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/bitcoin-PbM30oEE.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/CustomHelmet-mqlsN33b.js">
+  <link rel="stylesheet" crossorigin="" href="/assets/index-YSouItNU.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="/assets/main-CUM0TpEs.js">
+  <!-- script -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KJCLQLQ8LJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KJCLQLQ8LJ");
+  </script>
+  <!-- <script type="module" crossorigin="" src="/assets/main-DRFrzrWC.js"></script> -->
+
+  <!-- доп стили -->
+
+  <style type="text/css">
+    .rfm-marquee-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: var(--width);
+      transform: var(--transform);
+    }
+
+    .rfm-marquee-container:hover div {
+      animation-play-state: var(--pause-on-hover);
+    }
+
+    .rfm-marquee-container:active div {
+      animation-play-state: var(--pause-on-click);
+    }
+
+    .rfm-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rfm-overlay::before,
+    .rfm-overlay::after {
+      background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: var(--gradient-width);
+      z-index: 2;
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    .rfm-overlay::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .rfm-overlay::before {
+      left: 0;
+      top: 0;
+    }
+
+    .rfm-marquee {
+      flex: 0 0 auto;
+      min-width: var(--min-width);
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+      animation-play-state: var(--play);
+      animation-delay: var(--delay);
+      animation-direction: var(--direction);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .rfm-initial-child-container {
+      flex: 0 0 auto;
+      display: flex;
+      min-width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .rfm-child {
+      transform: var(--transform);
+    }
+  </style>
+
+  <style type="text/css">
+    @keyframes ActivityRings-module_RingProgress__MiyKs {
+      from {
+        stroke-dasharray: 0 999;
+      }
+    }
+
+    .ActivityRings-module_innerActivityRing__2Jwbn {
+      transform-origin: 50%;
+      transform: rotate(-90deg);
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      animation: ActivityRings-module_RingProgress__MiyKs forwards;
+    }
+
+    .ActivityRings-module_innerActivityRingBackground__lnUfz {
+      transform-origin: 50%;
+      transform: rotate(-90deg);
+      fill: none;
+    }
+  </style>
+
+  <style>
+    @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+
+</head>
+
+<body style="overflow: auto;">
+  <div id="root">
+    <div class="_wrapper_dltkq_1">
+      <div class="_container_dltkq_13">
+        <div>
+          <a class="_link_18p1q_1" href="index-lk.html">TRADESIGNAL</a>
+        </div>
+        <div class="_burger_dltkq_22"></div>
+        <div class="_menuWrapper_dltkq_64 _auth_dltkq_81">
+          <nav class="_navbarMenu_dltkq_95">
+            <a class="_navLink_dltkq_111" href="about-us-lk.html">О нас</a>
+            <a class="_navLink_dltkq_111" href="signal.html">Сигнал</a>
+            <a class="_navLink_dltkq_111 _active_dltkq_119" href="history.html">История сделок</a>
+            <a class="_navLink_dltkq_111" href="instruction-lk.html">Инструкция</a>
+            <a class="_navLink_dltkq_111" href="wiki-lk.html">Вики</a>
+          </nav>
+          <div class="_right_dltkq_103">
+            <div class="_wrapper_1xdl1_1">
+              <button class="_button_1xdl1_5">
+                <span class="_currLang_1xdl1_41">RU</span>
+              </button>
+              <!-- <div class="_dropdown_1xdl1_56">
+                <div class="_container_1xdl1_9"><button class="_langButton_1xdl1_17">UA</button><button
+                    class="_langButton_1xdl1_17">EN</button><button
+                    class="_langButton_1xdl1_17 _active_1xdl1_26">RU</button></div>
+              </div> -->
+            </div>
+            <!-- социальные -->
+            <a class="_supportLink_dltkq_152" href="https://t.me/+rYXlRUG-wkUwMmQy">
+              <button class="_button_1wisi_1 _blueShadow_1wisi_12">
+                <img src="assets/tg.svg" alt="icon-tg">
+              </button>
+              <span>Поддержка</span>
+            </a>
+            <div class="_authLinksWrapper_dltkq_138">
+              <a class="_accountWrapper_dltkq_123" href="account.html">
+                <button class="_button_1wisi_1 _blueShadow_1wisi_12 _account_dltkq_123">
+                  <img src="assets/log.svg" alt="регистрация">
+                </button>
+                <p>Мой кабинет</p>
+              </a>
+              <div class="_authLoginLinkWrapper_dltkq_139"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- История сделок -->
+    <section class="_wrapper_hq2vv_1 _container_pyb3e_1">
+      <div class="_container_hq2vv_8 _sectionContainer_pyb3e_12">
+        <div>
+          <h2 class="_cardTitle_pyb3e_21">История сделок</h2>
+          <div class="_statsContainer_pyb3e_33">
+            <div class="_statsItem_t8ihl_1">
+              <div class="_totalSignalsSection_t8ihl_12">
+                <div>
+                  <h3 class="_totalTitle_t8ihl_19">Всего сигналов</h3>
+                  <p class="_totalAmount_t8ihl_28">0</p>
+                </div>
+                <div class="_statsSignalsSection_t8ihl_43">
+                  <div class="_statsContainer_t8ihl_53 _win_t8ihl_66">
+                    <div class="_dot_t8ihl_60"></div>
+                    <p class="_text_t8ihl_76">Успешные сигналы: <span class="_statsAmount_t8ihl_84">0</span></p>
+                  </div>
+                  <div class="_statsContainer_t8ihl_53 _loss_t8ihl_69">
+                    <div class="_dot_t8ihl_60"></div>
+                    <p class="_text_t8ihl_76">Неуспешные сигналы: <span class="_statsAmount_t8ihl_84">0</span></p>
+                  </div>
+                  <div class="_statsContainer_t8ihl_53 _neutral_t8ihl_72">
+                    <div class="_dot_t8ihl_60"></div>
+                    <p class="_text_t8ihl_76">Нейтральные сигналы: <span class="_statsAmount_t8ihl_84">0</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="_activityRings_t8ihl_37">
+                <svg viewBox="0 0 176.5 176.5" height="100px" width="100%">
+                  <g>
+                    <circle cx="50%" cy="50%" r="56" stroke="#5b4a0a" stroke-opacity="0.4" stroke-width="12"
+                      class="ActivityRings-module_innerActivityRingBackground__lnUfz"></circle>
+                    <circle cx="50%" cy="50%" r="56" stroke-dasharray="NaN 9999" stroke="#5b4a0a" stroke-width="12"
+                      class="ActivityRings-module_innerActivityRing__2Jwbn"
+                      style="animation-duration: 1000ms; animation-timing-function: ease-in-out;"></circle>
+                    <foreignObject x="50%" y="50%" width="28px" height="28px"></foreignObject>
+                    <circle cx="50%" cy="50%" r="68.75" stroke="#c8246d" stroke-opacity="0.4" stroke-width="12"
+                      class="ActivityRings-module_innerActivityRingBackground__lnUfz"></circle>
+                    <circle cx="50%" cy="50%" r="68.75" stroke-dasharray="NaN 99999" stroke="#c8246d" stroke-width="12"
+                      class="ActivityRings-module_innerActivityRing__2Jwbn"
+                      style="animation-duration: 1000ms; animation-timing-function: ease-in-out;"></circle>
+                    <foreignObject x="50%" y="50%" width="34.375px" height="34.375px"></foreignObject>
+                    <circle cx="50%" cy="50%" r="81.5" stroke="#4807ea" stroke-opacity="0.4" stroke-width="12"
+                      class="ActivityRings-module_innerActivityRingBackground__lnUfz"></circle>
+                    <circle cx="50%" cy="50%" r="81.5" stroke-dasharray="NaN 999999" stroke="#4807ea" stroke-width="12"
+                      class="ActivityRings-module_innerActivityRing__2Jwbn"
+                      style="animation-duration: 1000ms; animation-timing-function: ease-in-out;"></circle>
+                    <foreignObject x="50%" y="50%" width="40.75px" height="40.75px"></foreignObject>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="_statsItem_n22eg_1 _infoOpen_n22eg_19">
+              <div>
+                <h3 class="_title_n22eg_23">Win rate</h3>
+                <p class="_winRateAmount_n22eg_33">0%</p>
+              </div>
+              <!-- рекомендация  -->
+              <div class="_infoContainer_n22eg_42">
+                <img src="/assets/info-XdhPC73H.png" alt="info" class="_infoImg_n22eg_60">
+              </div>
+              <!-- модалка (скрыта по умолчанию) -->
+              <div class="_infoModal_n22eg_65" style="display:none;">
+                <div class="_closeBtn_n22eg_52">✖</div>
+                <div class="_infoModalWrapper_n22eg_78">
+                  <h3 class="_infoRecomendationTitle_n22eg_82">Рекомендации:</h3>
+                  <ol class="_infoRecomendationList_n22eg_90">
+                    <li>Проверяйте экономический календарь.</li>
+                    <li>Анализируйте рынок и следуйте тренду.</li>
+                    <li>Используйте риск-менеджмент.</li>
+                    <li>Избегайте торговли во время нестабильности.</li>
+                    <li>Анализируйте свои сделки для улучшения стратегии.</li>
+                  </ol>
+                  <p class="_disclaimerText_n22eg_100">
+                    В случае, если негативных сигналов будет больше, чем позитивных, рекомендуем выбрать другое время
+                    для торговли.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cтатистика -->
+        <div>
+          <h2 class="_cardTitle_pyb3e_21">Cтатистика</h2>
+          <div class="_tableFiltersWrapper_qtz9g_85">
+            <div class="_filters_qtz9g_100">
+              <div class="_filtersSelection_qtz9g_100">
+                <div class="_wrapper_8a8ig_1"><button class="_button_8a8ig_6"><span
+                      class="_selection_8a8ig_53">ИИ</span>
+                    <div class="_arrowDown_8a8ig_29">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <div class="_dropdown_8a8ig_83">
+                    <div class="_container_8a8ig_103"><button class="_selectionItem_8a8ig_67">ИИ</button></div>
+                  </div>
+                </div>
+                <div class="_wrapper_8a8ig_1"><button class="_button_8a8ig_6"><span
+                      class="_selection_8a8ig_53">Результат</span>
+                    <div class="_arrowDown_8a8ig_29">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <div class="_dropdown_8a8ig_83">
+                    <div class="_container_8a8ig_103"><button class="_selectionItem_8a8ig_67">Результат</button></div>
+                  </div>
+                </div>
+                <div class="_wrapper_8a8ig_1"><button class="_button_8a8ig_6"><span class="_selection_8a8ig_53">Валютная
+                      пара</span>
+                    <div class="_arrowDown_8a8ig_29">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <div class="_dropdown_8a8ig_83">
+                    <div class="_container_8a8ig_103"><button class="_selectionItem_8a8ig_67">Валютная пара</button>
+                    </div>
+                  </div>
+                </div>
+              </div><button class="_resetButton_qtz9g_110"><span>Сбросить</span></button>
+            </div>
+          </div>
+          <div class="_historyTableWrapper_qtz9g_74" style="position: relative;">
+            <table class="_historyTable_qtz9g_1">
+              <thead>
+                <tr class="_tableHead_qtz9g_11">
+                  <th>Валютная пара</th>
+                  <th>Дата</th>
+                  <th>Время</th>
+                  <th>ИИ</th>
+                  <th>Продолжительность</th>
+                  <th>Результат</th>
+                </tr>
+              </thead>
+              <div class="infinite-scroll-component__outerdiv">
+                <div class="infinite-scroll-component " style="height: auto; overflow: auto;">
+                  <tbody class="_tableBody_qtz9g_33" id="scrollableDiv">
+                    <tr class="_noDataRow_qtz9g_68">
+                      <td colspan="5">
+                        <p>Вы еще не получали сигналы</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </table>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <div class="_wrapper_7z5zm_1">
+    <div class="_container_7z5zm_9">
+      <div class="_marqueeContainer_7z5zm_19">
+        <div>
+          <div class="rfm-marquee-container _marqueeContainer_v1xye_1"
+            style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;">
+            <div class="rfm-marquee"
+              style="--play: running; --direction: reverse; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+              <div class="rfm-initial-child-container">
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rfm-marquee"
+              style="--play: running; --direction: reverse; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rfm-marquee-container _marqueeContainer_v1xye_1"
+            style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;">
+            <div class="rfm-marquee"
+              style="--play: running; --direction: normal; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+              <div class="rfm-initial-child-container">
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+                <div class="rfm-child" style="--transform: none;">
+                  <p class="_text_v1xye_14">
+                    TradeSignal
+                    <img src="assets/signal.svg" alt="">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rfm-marquee"
+              style="--play: running; --direction: normal; --duration: 34.31159912109375s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+              <div class="rfm-child" style="--transform: none;">
+                <p class="_text_v1xye_14">
+                  TradeSignal
+                  <img src="assets/signal.svg" alt="">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="_topBorderContainer_7z5zm_27">
+        <div class="_topContainer_7z5zm_33">
+          <a class="_link_18p1q_1" href="/">TradeSignal</a>
+          <div class="_socials_7z5zm_43">
+            <a href="https://t.me/max_supportTraide" target="_blank">
+              <img src="assets/tg.svg" alt="">
+            </a>
+            <a href="mailto:maks.lavrinovich00@mail.ru" target="_blank">
+              <img src="assets/mail.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="_info_7z5zm_54">
+        <div>
+          <div class="_copyright_7z5zm_62">Copyright © 2025 TradeSignal | Все права защищены</div>
+        </div>
+        <div class="_links_7z5zm_71">
+          <a href="terms.html" target="_blank">
+            <div class="_link_7z5zm_71">Условия использования</div>
+          </a>
+          <div class="_separator_7z5zm_80">|</div>
+          <a href="privacy-policy.html" target="_blank">
+            <div class="_link_7z5zm_71">Политика конфиденциальности</div>
+          </a>
+          <div class="_separator_7z5zm_80">|</div>
+          <a href="cookie-policy.html" target="_blank">
+            <div class="_link_7z5zm_71">Политика файлов cookie</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="modal-root"></div>
+
+  <!-- модалка рекомендация -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const infoBtn = document.querySelector("._infoContainer_n22eg_42");
+      const modal = document.querySelector("._infoModal_n22eg_65");
+      const closeBtn = modal.querySelector("._closeBtn_n22eg_52");
+
+      // открыть
+      infoBtn.addEventListener("click", () => {
+        modal.style.display = "block";
+      });
+
+      // закрыть
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("._statsItem_n22eg_1").forEach(statsItem => {
+        const infoBtn = statsItem.querySelector("._infoContainer_n22eg_42");
+        const closeBtn = statsItem.querySelector("._closeBtn_n22eg_52");
+
+        infoBtn.addEventListener("click", () => {
+          statsItem.classList.add("_infoOpen_n22eg_19");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          statsItem.classList.remove("_infoOpen_n22eg_19");
+        });
+      });
+    });
+  </script>
+
+  <!-- фильтры -->
+  <script>
+const selectedFilters = {
+  'ИИ': null,
+  'Результат': null,
+  'Валютная пара': null
+};
+
+// Функция обновления таблицы с лоадером
+function updateTable() {
+  const tbody = document.getElementById('scrollableDiv');
+
+  const loaderHTML = `<tr class="_noDataRow_qtz9g_68">
+    <td colspan="6" style="position: relative; height: 100px;">
+      <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height: 100%;
+      ">
+        <div class="spinner" style="
+          border: 4px solid #f3f3f3;
+          border-top: 4px solid #555;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          animation: spin 1s linear infinite;
+        "></div>
+      </div>
+    </td>
+  </tr>`;
+
+  // Показываем лоадер
+  tbody.innerHTML = loaderHTML;
+
+  setTimeout(() => {
+    // Через 3 секунды показываем сообщение о пустой таблице
+    tbody.innerHTML = `<tr class="_noDataRow_qtz9g_68">
+      <td colspan="6">
+        <p>Вы еще не получали сигналы</p>
+      </td>
+    </tr>`;
+
+    console.log('Фильтры применены:', selectedFilters);
+  }, 3000); // 3 секунды
+}
+
+// Показ/скрытие дропдауна фильтра
+function toggleFilter(wrapper) {
+  const isOpen = wrapper.querySelector('button._button_8a8ig_6').classList.contains('_open_8a8ig_38');
+  document.querySelectorAll('div._wrapper_8a8ig_1').forEach(w => {
+    w.querySelector('button._button_8a8ig_6')?.classList.remove('_open_8a8ig_38');
+    w.querySelector('div._dropdown_8a8ig_83')?.classList.remove('_open_8a8ig_38');
+  });
+  if (!isOpen) {
+    wrapper.querySelector('button._button_8a8ig_6').classList.add('_open_8a8ig_38');
+    wrapper.querySelector('div._dropdown_8a8ig_83')?.classList.add('_open_8a8ig_38');
+  }
+}
+
+// Клик по кнопкам фильтров
+document.querySelectorAll('div._wrapper_8a8ig_1 > button._button_8a8ig_6').forEach(button => {
+  button.addEventListener('click', e => {
+    const wrapper = e.currentTarget.closest('div._wrapper_8a8ig_1');
+    if (wrapper) toggleFilter(wrapper);
+  });
+});
+
+// Выбор элемента из списка фильтра
+document.querySelectorAll('div._container_8a8ig_103 > button._selectionItem_8a8ig_67').forEach(item => {
+  item.addEventListener('click', e => {
+    const wrapper = e.currentTarget.closest('div._wrapper_8a8ig_1');
+    if (!wrapper) return;
+
+    const buttonSpan = wrapper.querySelector('span._selection_8a8ig_53');
+    if (buttonSpan) buttonSpan.textContent = item.textContent.trim();
+
+    wrapper.querySelector('button._button_8a8ig_6')?.classList.remove('_open_8a8ig_38');
+    wrapper.querySelector('div._dropdown_8a8ig_83')?.classList.remove('_open_8a8ig_38');
+
+    // Сохраняем выбранный фильтр
+    const label = wrapper.querySelector('span._selection_8a8ig_53').textContent.trim();
+    selectedFilters[label] = item.textContent.trim();
+
+    // Обновляем таблицу
+    updateTable();
+  });
+});
+
+// Кнопка "Сбросить"
+document.querySelector('button._resetButton_qtz9g_110').addEventListener('click', () => {
+  // Сбрасываем значения фильтров
+  document.querySelectorAll('div._wrapper_8a8ig_1').forEach(wrapper => {
+    const buttonSpan = wrapper.querySelector('span._selection_8a8ig_53');
+    if (buttonSpan) {
+      // Берём первоначальный текст (например, тот, что сейчас в HTML)
+      const defaultText = wrapper.querySelector('div._container_8a8ig_103 > button._selectionItem_8a8ig_67')?.textContent.trim();
+      if (defaultText) buttonSpan.textContent = defaultText;
+
+      // Сбрасываем selectedFilters
+      const label = buttonSpan.textContent.trim();
+      selectedFilters[label] = null;
+    }
+
+    wrapper.querySelector('button._button_8a8ig_6')?.classList.remove('_open_8a8ig_38');
+    wrapper.querySelector('div._dropdown_8a8ig_83')?.classList.remove('_open_8a8ig_38');
+  });
+
+  // Обновляем таблицу
+  updateTable();
+});
+
+// Инициализация
+updateTable();
+
+  </script>
+
+
+
+</body>
+
+</html>

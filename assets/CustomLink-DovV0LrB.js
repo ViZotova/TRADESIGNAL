@@ -1,0 +1,1 @@
+import{d as i,j as l,L as c,c as m}from"./main-CUM0TpEs.js";const r="_link_64em0_1",k={link:r},u=({text:s,href:a="#",className:n,target:t="_self",children:o})=>{const e=i();return l.jsx(c,{target:t,to:e(a),className:m(k.link,n),children:s||o})};export{u as C};
