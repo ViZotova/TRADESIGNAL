@@ -3,25 +3,18 @@
   const email = params.get("email");
   const password = params.get("password");
 
-  if (!email || !password) {
-    return;
-  }
+  if (!email || !password) return;
 
   try {
-    const response = await fetch("/TRADESIGNAL/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password, }),
-    });
+    const response = await fetch("/TRADESIGNAL/users.json");
+    const users = await response.json();
 
-    const result = await response.json();
-    console.log("Ответ сервера:", result);
-
-    if (response.ok && result.email) {
-      localStorage.setItem("user", result.email);
+    const user = users.find(u => u.email === email && u.password === password);
+    if (user) {
+      localStorage.setItem("user", user.email);
       window.location.href = "index-lk.html";
     } else {
-      alert(result.message || "Ошибка входа");
+      alert("Неверный email или пароль");
     }
   } catch (error) {
     alert("Ошибка сети или сервера: " + error.message);
