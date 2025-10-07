@@ -1,7 +1,7 @@
 ._container_pyb3e_1 {
   padding-top: 100px;
   text-align: center;
-  background: url(./assets/bg-CsdhEp9D.png) no-repeat;
+  background: url(bg-CsdhEp9D.png) no-repeat;
   background-position: top;
   background-size: cover;
   -webkit-background-size: cover;
@@ -783,7 +783,7 @@ td>span._squadSignal_mkags_45 {
   background: #23232361;
   border: 1px solid rgba(255, 255, 255, .3);
   min-height: 240px;
-  background-image: url(/assets/winRateBars-y3ID-I8c.png);
+  background-image: url(winRateBars-y3ID-I8c.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
