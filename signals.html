@@ -214,12 +214,6 @@
     <section class="_wrapper_hq2vv_1">
       <div class="_container_hq2vv_8 _wrapper_18eu1_1">
         <div class="Toastify"></div>
-        <!-- видео  -->
-        <!-- <div class="_signalVideo_1ix92_1">
-          <video loop="" playsinline="" class="_video_1ix92_12">
-            <source src="/TRADESIGNAL/videos/loading-animation.mp4#t=1" type="video/mp4">
-          </video>
-        </div> -->
         <div class="_signalVideo_1ix92_1">
           <video loop playsinline muted autoplay class="_video_1ix92_12">
             <source src="/TRADESIGNAL/videos/loading-animation.mp4" type="video/mp4">
@@ -250,7 +244,7 @@
             <h2>AI:</h2>
             <div class="_list_g0rk5_12">
               <!-- ChatGPT 4.0 -->
-              <button class="">
+              <button class="ChatGPT">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -270,7 +264,7 @@
                 ChatGPT 4.0
               </button>
               <!-- Signal1% AI -->
-              <button class="_selected_g0rk5_46">
+              <button class="_selected_g0rk5_46 Signal1%">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -307,7 +301,7 @@
                 Signal1% AI
               </button>
               <!-- VIP Indicator -->
-              <button class="_vip_g0rk5_59">
+              <button class="_vip_g0rk5_59 VIP">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   fill="#ffffff" stroke="#ffffff">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -336,7 +330,7 @@
                   class="_confetti_g0rk5_79"></span><span class="_confetti_g0rk5_79"></span>
               </button>
               <!-- 1% SQUAD -->
-              <button class="_squad13_g0rk5_69">
+              <button class="_squad13_g0rk5_69 SQUAD">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="icon icon-tabler icons-tabler-outline icon-tabler-number-13-small">
@@ -348,7 +342,7 @@
                 </svg>1% SQUAD
               </button>
               <!-- Signal1% AI v2 -->
-              <button class="">
+              <button class="Signal1%">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -393,7 +387,7 @@
                 </svg>Signal1% AI v2
               </button>
               <!-- Indicators + ChatGPT 3.5 -->
-              <button class="">
+              <button class="Indicators">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -444,7 +438,7 @@
                 </svg>Indicators + ChatGPT 3.5
               </button>
               <!-- 1%Trade AI PLUS -->
-              <button class="">
+              <button class="1%Trade">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -481,7 +475,7 @@
                 </svg>1%Trade AI PLUS
               </button>
               <!-- MANUAL AI -->
-              <button class="">
+              <button class="MANUAL">
                 <svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
                   <path d="M11 44V15C11 12.7909 12.7909 11 15 11C17.2091 11 19 12.7909 19 15V35L42 40V44"
@@ -507,7 +501,8 @@
         <div class="_desktopPendingWrapper_1ix92_417"></div>
         <div class="_getContainer_1ix92_16">
           <div class="_onGetSignalContainer_1ix92_29"><button type="button"
-              class="_button_13fxj_1 _action_13fxj_13"><span>Получить новый сигнал</span><svg width="16" height="16"
+              class="_button_13fxj_1 _action_13fxj_13"><span>Получить новый сигнал</span>
+              <svg width="16" height="16"
                 viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1166_5278)">
                   <path
@@ -528,7 +523,8 @@
                     <rect width="16" height="16" fill="white"></rect>
                   </clipPath>
                 </defs>
-              </svg></button></div>
+              </svg>
+            </button></div>
         </div>
       </div>
     </section>
@@ -1286,7 +1282,7 @@
   </script>
 
   <!-- VIP Indicator / MANUAL AI -->
-  <script>
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", () => {
       const aiInfoButtons = document.querySelectorAll("._list_g0rk5_12.ai-group button");
       const container = document.querySelector("._getContainer_1ix92_16");
@@ -1443,7 +1439,64 @@
         });
       });
     });
-  </script>
+  </script> -->
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const aiInfoButtons = document.querySelectorAll("._list_g0rk5_12 button"); // все кнопки
+  const container = document.querySelector("._getContainer_1ix92_16");
+
+  const templates = {
+    default: `
+      <div class="_onGetSignalContainer_1ix92_29">
+        <button type="button" class="_button_13fxj_1 _action_13fxj_13">
+          <span>Получить новый сигнал</span>
+        </button>
+      </div>
+    `,
+    vip: `
+      <div class="_onGetSignalContainer_1ix92_29">
+        <p class="_vipSignalBalanceCheckText_1ix92_37">
+          Для использования этого индикатора ваш баланс должен быть больше $1000. Ваш текущий баланс $11.5.
+        </p>
+        <button type="button" class="_button_13fxj_1 _action_13fxj_13" disabled>
+          <span>Получить новый сигнал</span>
+        </button>
+        <button type="button" class="_button_13fxj_1 _action_13fxj_13">
+          <span>Проверить баланс</span>
+        </button>
+      </div>
+    `,
+    manual: `
+      <div class="_wrapper_1jk17_1">
+        <h2 class="_title_1jk17_14">Пара: </h2>
+        <div class="_mainContainer_1jk17_9">
+          <button class="_button_1jk17_30 _manualButton" tabindex="0">
+            <span>MANUAL AI</span>
+          </button>
+        </div>
+      </div>
+    `
+  };
+
+  aiInfoButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Убираем активность со всех кнопок
+      aiInfoButtons.forEach(btn => btn.classList.remove("_active"));
+      button.classList.add("_active");
+
+      // Определяем какой шаблон вставлять
+      if (button.classList.contains("_vip_g0rk5_59")) {
+        container.innerHTML = templates.vip;
+      } else if (button.classList.contains("MANUAL")) {
+        container.innerHTML = templates.manual;
+      } else {
+        container.innerHTML = templates.default;
+      }
+    });
+  });
+});
+</script>
 
 </body>
 
