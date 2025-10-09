@@ -502,8 +502,7 @@
         <div class="_getContainer_1ix92_16">
           <div class="_onGetSignalContainer_1ix92_29"><button type="button"
               class="_button_13fxj_1 _action_13fxj_13"><span>Получить новый сигнал</span>
-              <svg width="16" height="16"
-                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1166_5278)">
                   <path
                     d="M15.997 8.57534C15.9773 8.33903 15.8195 8.14211 15.6027 8.06334L5.17449 4.44001C4.95765 4.36124 4.72109 4.42032 4.56339 4.57786C4.40568 4.73539 4.34654 4.9717 4.4254 5.18831L8.05261 15.6054C8.13146 15.822 8.32859 15.9795 8.56515 15.9992C8.58486 15.9992 8.60457 15.9992 8.60457 15.9992C8.82142 15.9992 9.01855 15.8811 9.11712 15.6842L10.6153 12.8682L12.5669 14.8374C12.6852 14.9556 12.8232 15.0146 12.9809 15.0146C13.1386 15.0146 13.2963 14.9556 13.3948 14.8374L14.8142 13.4196C14.9325 13.3014 14.9916 13.1636 14.9916 13.006C14.9916 12.8485 14.9325 12.691 14.8142 12.5925L12.8429 10.643L15.6816 9.14641C15.8984 9.02825 16.0167 8.81164 15.997 8.57534Z"
@@ -1281,21 +1280,21 @@
     });
   </script>
 
-  <!-- VIP Indicator / MANUAL AI -->
+  <!-- VIP Indicator / MANUAL AI / squad -->
   <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const aiInfoButtons = document.querySelectorAll("._list_g0rk5_12 button"); // все кнопки
-  const container = document.querySelector("._getContainer_1ix92_16");
+    document.addEventListener("DOMContentLoaded", () => {
+      const aiInfoButtons = document.querySelectorAll("._list_g0rk5_12 button"); // все кнопки
+      const container = document.querySelector("._getContainer_1ix92_16");
 
-  const templates = {
-    default: `
+      const templates = {
+        default: `
       <div class="_onGetSignalContainer_1ix92_29">
         <button type="button" class="_button_13fxj_1 _action_13fxj_13">
           <span>Получить новый сигнал</span>
         </button>
       </div>
     `,
-    vip: `
+        vip: `
       <div class="_onGetSignalContainer_1ix92_29">
         <p class="_vipSignalBalanceCheckText_1ix92_37">
           Для использования этого индикатора ваш баланс должен быть больше $1000. Ваш текущий баланс $11.5.
@@ -1308,7 +1307,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </button>
       </div>
     `,
-    squad: `
+        squad: `
       <div class="_onGetSignalContainer_1ix92_29">
         <p class="_vipSignalBalanceCheckText_1ix92_37">
           Для использования этого индикатора ваш баланс должен быть больше $300. Ваш текущий баланс $11.5.
@@ -1321,7 +1320,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </button>
       </div>
     `,
-    manual: ` 
+        manual: ` 
       <div class="_wrapper_1jk17_1">
           <h2 class="_title_1jk17_14">Пара: </h2>
           <div class="_mainContainer_1jk17_9"><button class="_button_1jk17_30 _manualButton" tabindex="0">
@@ -1407,24 +1406,27 @@ document.addEventListener("DOMContentLoaded", () => {
     `
       };
 
-  aiInfoButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      // Убираем активность со всех кнопок
-      aiInfoButtons.forEach(btn => btn.classList.remove("_active"));
-      button.classList.add("_active");
+      aiInfoButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          // Убираем активность со всех кнопок
+          aiInfoButtons.forEach(btn => btn.classList.remove("_active"));
+          button.classList.add("_active");
 
-      // Определяем какой шаблон вставлять
-      if (button.classList.contains("_vip_g0rk5_59")) {
-        container.innerHTML = templates.vip;
-      } else if (button.classList.contains("MANUAL")) {
-        container.innerHTML = templates.manual;
-      } else {
-        container.innerHTML = templates.default;
-      }
+          // Определяем какой шаблон вставлять
+          if (button.classList.contains("_vip_g0rk5_59")) {
+            container.innerHTML = templates.vip;
+          } else if (button.classList.contains("SQUAD")) {
+            container.innerHTML = templates.squad;
+          } else if (button.classList.contains("MANUAL")) {
+            container.innerHTML = templates.manual;
+          } else {
+            container.innerHTML = templates.default;
+          }
+
+        });
+      });
     });
-  });
-});
-</script>
+  </script>
 
 </body>
 
